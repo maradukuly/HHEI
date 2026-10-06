@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\title{Model 1}
+\author{Mara Dukuly and Adi Suresh}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Motivation}
+\begin{itemize}
+    \item \textbf{Scenario}: Suppose we have a country affected by some conflict.
+
+    \item \textbf{Assumption}: We can provide them with the money to rebuild their country after the war, and they have their pre-war levels.
+
+    \item \textbf{Example}: The number of schools, hospitals, etc.
+
+    \item \textbf{Observation}: War-affected countries seem to have persistent effects in terms of long-term development (i.e. Liberia, Sierra Leone, Sudan, Eritrea, Ethiopia, etc.)
+
+    \item \textbf{Question}: What is missing?
+
+    \item \textbf{Answer}: Human capital and skill formation.
+
+    \item Over some period of conflict, an individual does not build their ``set'' of skills and therefore loses potential gains from skill formation they would otherwise have built during that period.
+
+    \item We assume the individual had, or would have built, some sort of skill-capital during the war period through:
+    \begin{itemize}
+        \item Primary school education
+        \item Parental investment
+        \item Work experience
+    \end{itemize}
+
+    \item This loss then poses an inter-generational issue.
+\end{itemize}
+
+\noindent How can we aggregate individuals' conflict exposure and skill formation losses to explain current macroeconomic outcomes?
+
+\medskip
+\noindent Develop a theoretical and empirical model that captures the following:
+\begin{enumerate}
+    \item Capture learning-by-doing losses and skill formation as human capital in a CES production function.
+    \item Measure heterogeneous effects in agents as aggregated human capital losses across multiple periods.
+    % \item Estimate human-capital "catch-up" in a post-war economy. This may not be our case, but we can revise this question/ motivating point
+\end{enumerate}
+
+\section{Model}
+
+Each time period $t$ is a 3-year period until the individual is 47. Let $a$ represent the age of the agent in the current period, where $A$ is the age in period $t_N$, the age at death. Then $a \in [0,47]$ and $t \in [0,11]$.
+
+\medskip
+\noindent The agent solves the following sequential problem:
+\begin{equation}
+    \max_{\{C_{a,t},\, X_{a,t},\, I_t,\, K_{t+1},\, H_{a,t+1}\}_{t=0}^{T}}
+    \; \sum_{t=0}^{T} \beta^t \sum_{a=0}^{A} \frac{C_{a,t}^{1-\gamma}}{1-\gamma}
+\end{equation}
+subject to, for all $t = 0, \dots, T$ and $a = 0, \dots, A$:
+\begin{align}
+    \sum_{a=0}^{A} C_{a,t} + \sum_{a=0}^{A} X_{a,t} + I_t + K_t &\leq Y_t
+        && \text{(resource constraint)} \\
+    Y_t &= A K_t^{\alpha} \big(H_t L_t\big)^{1-\alpha}
+        && \text{(output)} \\
+    K_{t+1} &= (1-\delta) K_t + I_t
+        && \text{(capital accumulation)} \\
+    H_{a+1,t+1} &= \Omega_{a,t} \Big[\phi_{a,t}\, X_{a,t}^{\rho_t} + \theta_{a,t}\, H_{a,t}^{\rho_t}
+        && \text{(skill formation)} \notag \\
+    &\qquad + \big(1 - \phi_{a,t} - \theta_{a,t}\big)\, H_{P,t}^{\rho_t}\Big]^{1/\rho_t} \\
+    \bar{H}_{t+1} &= \frac{1}{A} H_0 + \frac{A-1}{A}\, \bar{H}_t,
+        \qquad H_t \equiv \bar{H}_t
+        && \text{(average human capital)} \\
+    C_{a,t} \geq 0, \quad & X_{a,t} \geq 0, \quad K_{t+1} \geq 0,
+\end{align}
+with $\rho_t \in (-\infty, 1)$, given the initial conditions $K_0$ and $\{H_{a,0}\}_{a=0}^{A}$. When agents are aged 12--15, their human capital at that point is taken as the entry level $H_0 = H_{a,t}$ in the average human capital equation.
+
+\medskip
+\noindent\textbf{Variables.}
+\begin{itemize}
+    \item \emph{Choice variables:} consumption $C_{a,t}$; skill investment $X_{a,t}$; physical investment $I_t$.
+    \item \emph{State variables:} physical capital $K_t$; human capital of an agent of age $a$, $H_{a,t}$; average human capital $\bar{H}_t$.
+    \item \emph{Other endogenous variables:} output $Y_t$; parental human capital $H_{P,t}$; entry-level human capital $H_0$.
+    \item \emph{Exogenous:} labor $L_t$; TFP $A$ in the output equation.
+\end{itemize}
+
+\noindent\textbf{Parameters.}
+\begin{itemize}
+    \item $\beta$: discount factor.
+    \item $\gamma$: coefficient of relative risk aversion.
+    \item $\alpha$: capital share.
+    \item $\delta$: depreciation rate of physical capital.
+    \item $\Omega_{a,t}$: productivity of the skill-formation technology.
+    \item $\phi_{a,t}$: weight on investment.
+    \item $\theta_{a,t}$: weight on own human capital.
+    \item $1-\phi_{a,t}-\theta_{a,t}$: weight on parental human capital.
+    \item $\rho_t$: substitution parameter; the elasticity of substitution is $1/(1-\rho_t)$.
+    \item $A$: age at death (number of ages) in the sums and in the $\bar{H}$ equation.
+    \item $T$: final period.
+\end{itemize}
+
+\end{document}

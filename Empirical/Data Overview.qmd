@@ -1,0 +1,63 @@
+The purpose of the file is to provide an overview of the data used for this research, including information on the sources, types, and structure of the data. 
+
+Types of Data 
+- Micro/ individual level data 
+- IPUMS DHS 
+
+## Conflict Data 
+- Number of conflicts, deaths, total exposure. 
+- We are looking at countries have had long term conflicts, and have at least 10 years of post conflict information availible.
+
+**Armed Conflict Location & Event Data (ACLED)**
+*link: https://acleddata.com/*
+*content usage: https://acleddata.com/contentusage* 
+
+- Dates conflict from 1997 to 2022, with a focus on the period from 2000 to 2022.
+- New conflict categories were added in 2015, including violence against civilians, battles, and riots/protests. Some were added in 2020 and only applies to events after that fact
+
+**Correlates of War (COW)**
+*link: https://correlatesofwar.org/data-sets/COW-war/*
+*content usage: https://correlatesofwar.org/data-sets/COW-war/*
+
+Data standard in conflict and peace research, with a focus on interstate and intrastate wars. Has many compatible or similar depenecies for data merging and analyis. See https://correlatesofwar.org/external-links/ 
+
+- ~Conflict dates vary from 1816-2022 INTRASTATE: 1946-2022
+Generally the dates range by dataset from 1816/1946 to 2022, other cutoff dates include 1997, 2001, 2005, 2010, and 2015. 
+- More robust data, has arms trade/ technology, alliance, state alliane, colonial contigencies, and territorial changes.
+- Country religious data.
+
+UCDP vs COW 
+- COW is mainly war, UCDP includes some politcal vioelence, and is more comprehensive in terms of conflict types. COW is more focused on wars and has a longer historical coverage, while UCDP provides more detailed information on the nature of conflicts and their actors.
+
+## Country Data 
+- Investment, GDP, population, and other macroeconomic-level indicators.
+
+## Post War Data
+- Post war data could entail information on the reconstruction and recovery of countries after conflicts, including economic, social, and political indicators. This data can help to understand the long-term impacts of conflict and the effectiveness of post-conflict interventions.
+- In partifular we are interested in post-conflict aid intervention, peacekeeping efforts, and how this may interact or influence the post conflict recovery of countries.
+Humanitarian aid: short term, immediate relief efforts, such as food, water, and medical assistance. 
+Post-war aid: medium to long term assistance aimed at rebuilding infrastructure, institutions, and social cohesion in post-conflict societies. This can include financial aid, technical assistance, and capacity-building programs.
+
+**Post-Conflict Justice (PCJ)** 
+- "An overview of if, where, and how post-conflict countries address the wrongdoings committed in association with previous armed conflict."
+- Years: 1946-2016
+**Goal: Find peace keeping efforts data**
+- Seeking comprehensive dataset on peacekeeping efforts, such as extranatioal interventions (before, during, and after), length of peacekeeping missions, number of officers, geographical spread, and detailed monteary aid assistance. 
+
+**International Peace Institute (IPI)**
+*link: https://www.ipinst.org/providing-for-peacekeeping-database#financial*
+Some data for example: Number of Active Years, Financial Contributions, Troop Contributions, Women in Peacekeeping, Neighboring Country Contributions to Missions, Francophone Contributions to Missions in Francophone Countries, and UN Recruitment Processes.
+Additionally, we care about aid in post-war recovery. Foreign aid, 
+**Default**
+- World Bank Data: https://databank.worldbank.org/source/world-development-indicators
+- OECD Data: https://data.oecd.org/finance/defaults.htm
+- UN Data: https://data.un.org/Default.aspx
+
+
+Other Data Sources
+**Peace Research Institute Oslo PRIO**
+*link to https://www.prio.org/data/* 
+PRIO provides a variety of datasets related to armed conflict, peace, and security. The datasets include information on small arms trade, arms transfers, and other related topics that can provide additional context to the conflict data.
+- Small arms trade data, arms transfers, and other related datasets that provide additional context to the conflict data.
+- Sexual violence, polity, natural resources reserves, "urban social disorder", several womens index, conflict onset and persistence, peace/ INGO data, and more.
+- Refugee return rates: https://www.google.com/search?q=Refugee+Return+Rates&sourceid=chrome&ie=UTF-8&source=chrome.ctxt 

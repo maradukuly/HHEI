@@ -1,0 +1,46 @@
+---
+title: "UCDP Base Analysis"
+author: "Mara Dukuly"
+date: "9/24/2026"
+jupyter: python3
+---
+
+# Data Description
+
+UCDP Country-Year Dataset on Organized Violence within Country Borders version 26.1 *link: https://ucdp.uu.se/downloads/#orgviocy*
+
+Shawn Davies, Therése Pettersson, Magnus Öberg, Organized violence 1989–2025, and violent political protests, Journal of Peace Research, 2026. https://doi.org/10.1093/jopres/xjag046
+
+# Analysis of UCDP Data
+
+Determine which countries have experiences long periods of conflict, and have at least 10 years of post-conflict information available.
+
+Sundberg, Ralph and Erik Melander (2013) Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4).
+
+```{python}
+import pandas as pd
+import numpy as np
+```
+
+```{python}
+ucdp = pd.read_csv("/Users/School/GitHub/HHEI/Data/Public_UCDP_ViolencebyCountry.csv")
+```
+
+```{python}
+ucdp.head()
+print(ucdp.columns)
+```
+
+```{python}
+violence_types = ucdp.groupby("country").agg(
+    first_year=('year', 'min'),
+    last_year=('year', 'max'),
+    total_years=('year', 'count'),
+    state_based = ('sb_exist', 'any'),
+    non_state = ('ns_exist', 'any'),
+    one_sided = ('os_exist', 'any')
+).reset_index()
+
+summary['overall_years'] = (summary['last_year'] - summary['first_year'] + 1)
+print(summary[[countycy, 'first_year', 'last_year', 'overall_years', 'state_based', 'non_state', 'one_sided']].sort_values(by='country', ascending=False))
+```
