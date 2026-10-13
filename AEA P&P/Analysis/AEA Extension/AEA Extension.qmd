@@ -1,0 +1,236 @@
+---
+title: "AEA Extension"
+format: 
+  html:
+    theme: cosmo
+    code-fold: true
+    code-tools: true
+    toc: true
+    toc-depth: 2
+    toc-location: left
+engine: jupyter
+python: "/opt/homebrew/bin/python3"
+---
+
+Methodology Outcome variable: probability of literacy Treatment: $$ \beta_1 =  \text{individuals county conflict exposure}_t $$ $$ \beta_2 = \text{neighboring county conflict exposure}_t $$
+
+```         
+Spatial based conflict exposure. For example, based on where an individual lives, we will proxy a "ring" of events that occur near them. For geolocation, use km. Otherwise we will use county based data and create rings based off that.
+Where each $\beta$ represents an event (battles):
+   Seperate into overall high/ low intenstiy by deaths
+   Proportion of overall conflicts near you given total number of events. 
+    
+```
+
+Controls: Let $X_i$ represent a vector of controls for $i$ based on their birth cohort country? be: Gender, ethnicity, birth cohort/ year of birth... \## Empirical Strategy
+
+### Sample
+
+We use the first Demographic and Health Survey fielded after each civil war ended: the 2007 Liberia DHS (war ended August 2003) and the 2008 Sierra Leone DHS (war ended January 2002), accessed through IPUMS DHS and linked to DHS GPS cluster coordinates. As an extension, we add the second post-war wave (2013 in both countries), which brings in younger cohorts with partial or no school-age exposure.
+
+To limit bias from war-time displacement, the sample is restricted to permanent residents: respondents who report having always lived in their current place of residence (DHS v104 = "always"). Visitors are excluded. The sample includes women and men aged 15–49 with non-missing literacy.
+
+### Indices
+
+$i$ individual; $n$ neighborhood (DHS cluster); $r$ region (county in Liberia, district in Sierra Leone); $c$ country; $b$ birth year; $t$ calendar year; $w$ survey wave; $d \in \{d_1, d_2, d_3\}$ distance band; $k \in \{1,2,3\}$ UCDP violence type (state-based, non-state, one-sided); $e$ UCDP GED event.
+
+### Outcome
+
+$L_i \in \{0,1\}$ equals 1 if respondent $i$ reads a whole sentence on the DHS reading card, or completed secondary school or higher, and 0 if they cannot read or read only parts of a sentence. Respondents with no card in a required language or with a visual impairment are set to missing. As a robustness check, partial readers are coded as literate.
+
+### Conflict exposure
+
+Distance bands around $i$'s neighborhood $n_i$ are non-overlapping:
+
+| Band  | Distance from $n_i$ |
+|-------|---------------------|
+| $d_1$ | 0 – TBD km          |
+| $d_2$ | TBD – TBD km        |
+| $d_3$ | TBD – TBD km        |
+
+Events beyond the outer edge of $d_3$ are excluded.
+
+$i$'s school-age window is $W_i = [b_i + a_0,\; b_i + a_1]$, where $a_0$ and $a_1$ are school-entry and school-exit ages (TBD; baseline 6–14).
+
+Each event $e$ has a year $t(e)$, violence type $k(e)$, country $c(e)$, distance from $i$'s neighborhood $\text{dist}(n_i, e)$, and distance to the Liberia–Sierra Leone border $\text{db}(e)$. The border zone is defined as $\text{db}(e) \le B$, with $B$ TBD. The set of relevant events for $i$ is
+
+$$\mathcal{R}_{i,d,k} = \{\, e : k(e) = k,\; t(e) \in W_i,\; \text{dist}(n_i, e) \in d \,\}$$
+
+partitioned into three mutually exclusive subsets:
+
+- **Internal conflict exposure:** $\mathcal{R}^{CE}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : c(e) = c_i,\; \text{db}(e) > B \}$
+- **Spillover conflict exposure:** $\mathcal{R}^{SCE}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : c(e) \neq c_i,\; \text{db}(e) > B \}$
+- **Border fighting exposure:** $\mathcal{R}^{BF}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : \text{db}(e) \le B \}$
+
+The treatment variables are log event counts:
+
+$$CE_{i,d,k} = \ln\!\big(1 + |\mathcal{R}^{CE}_{i,d,k}|\big), \quad
+  SCE_{i,d,k} = \ln\!\big(1 + |\mathcal{R}^{SCE}_{i,d,k}|\big), \quad
+  BF_{i,d,k} = \ln\!\big(1 + |\mathcal{R}^{BF}_{i,d,k}|\big)$$
+
+### Specification
+
+$$
+L_i = \sum_{d}\sum_{k} \beta_{d,k}\, CE_{i,d,k}
+    + \sum_{d}\sum_{k} \gamma_{d,k}\, SCE_{i,d,k}
+    + \sum_{d}\sum_{k} \theta_{d,k}\, BF_{i,d,k}
+    + X_i'\pi + \mu_{n} + \lambda_{c \times b} + \delta_{w} + \varepsilon_i
+$$
+
+- $X_i$: pre-determined individual controls (sex, ethnicity, religion)
+- $\mu_n$: neighborhood fixed effects
+- $\lambda_{c \times b}$: country-by-birth-year fixed effects
+- $\delta_w$: survey-wave fixed effects (each wave is country-specific)
+
+$\gamma_{d,k}$ are the parameters of interest: the effect of school-age exposure to conflict of type $k$ across the border, in band $d$, conditional on internal exposure and border fighting. The specification is estimated as a weighted linear probability model using DHS sampling weights.
+
+**Heterogeneity.** Let $Z_i = 1$ if $\text{db}(n_i) \le B$, i.e. $i$ lives in the border zone. We interact $Z_i$ with $SCE_{i,d,k}$ and $BF_{i,d,k}$ to test whether spillover effects differ for border residents. $Z_i$ itself is absorbed by $\mu_n$.
+
+Potientially use deaths per 100 if there are too many near zero coef... Also, break coef by affects based on age at time of conflict, multiple betas like: $$L_{igcb} = \beta^{cross}_{early} C^{cross}_{gb,\,6\text{–}10} + \beta^{cross}_{late} C^{cross}_{gb,\,11\text{–}14} + \beta^{own}_{early} C^{own}_{gb,\,6\text{–}10} + \beta^{own}_{late} C^{own}_{gb,\,11\text{–}14} + \ldots$$
+
+```{python}
+break 
+# ---- settings -------------------------------------------------------------
+data_dir = "/Users/School/GitHub/HHEI/Data"
+start_date, end_date = "1989-12-01", "2003-08-31"   # outer limits; frames run first event -> last event
+west, east, south, north = -14.0, -7.0, 4.0, 10.6
+region = ["Liberia", "Sierra Leone", "Guinea", "Ivory Coast"]
+n_factions = 9        # most active factions get their own colour
+step = 1              # events added per frame (1 = battle by battle; raise to speed up)
+fps = 12              # frames per second
+
+# ---- events, in chronological order ---------------------------------------
+ev = ucpd.copy()
+ev["date"] = pd.to_datetime(ev["date_start"], errors="coerce")
+ev = ev[
+    ev["date"].between(start_date, end_date)
+    & ev["country"].isin(region)
+    & ev["longitude"].between(west, east)
+    & ev["latitude"].between(south, north)
+].sort_values(["date", "id"]).reset_index(drop=True)
+
+def faction(row):
+    """Armed group behind the event: the first side that is not a government or civilians."""
+    for side in (row["side_a"], row["side_b"]):
+        s = str(side)
+        if not s.startswith("Government of") and s != "Civilians":
+            return s
+    return str(row["side_a"])
+
+ev["faction"] = ev.apply(faction, axis=1)
+top = ev["faction"].value_counts().head(n_factions).index.tolist()
+palette = ["#c0392b", "#1f618d", "#e08e0b", "#1e8449", "#7d3c98",
+           "#17a2b8", "#d35487", "#7b5a3a", "#b7950b", "#34495e"]
+fcolors = {f: palette[i % len(palette)] for i, f in enumerate(top)}
+
+n = len(ev)
+xy = ev[["longitude", "latitude"]].to_numpy()
+rgba = np.array([to_rgba(fcolors.get(f, "#555555"), 0.7) for f in ev["faction"]])
+sizes = (14 + 4 * np.sqrt(ev["best"].clip(lower=0))).to_numpy()
+
+months = pd.period_range(ev["date"].min(), ev["date"].max(), freq="M")
+ev["mi"] = (ev["date"].dt.year - months[0].year) * 12 + ev["date"].dt.month - months[0].month
+monthly = ev.groupby("mi").size().reindex(range(len(months)), fill_value=0)
+
+# ---- borders --------------------------------------------------------------
+def boundaries(iso, level):
+    """geoBoundaries admin units, downloaded once and cached in data_dir."""
+    path = os.path.join(data_dir, f"geoBoundaries-{iso}-{level}.geojson")
+    if not os.path.exists(path):
+        try:
+            meta = requests.get(
+                f"https://www.geoboundaries.org/api/current/gbOpen/{iso}/{level}/", timeout=60
+            ).json()
+            url = meta["gjDownloadURL"]
+        except Exception:
+            url = ("https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/"
+                   f"gbOpen/{iso}/{level}/geoBoundaries-{iso}-{level}.geojson")
+        r = requests.get(url, timeout=120)
+        r.raise_for_status()
+        with open(path, "wb") as f:
+            f.write(r.content)
+    return gpd.read_file(path)
+
+world = gpd.read_file(os.path.join(data_dir, "ne_50m_admin_0_countries.zip"))
+focus = world[world["ADMIN"].isin(["Liberia", "Sierra Leone"])]
+admin = pd.concat([boundaries("LBR", "ADM1"), boundaries("SLE", "ADM2")])
+
+# ---- figure ---------------------------------------------------------------
+fig, (ax, tl) = plt.subplots(
+    2, 1, figsize=(8.5, 10), gridspec_kw={"height_ratios": [7, 1], "hspace": 0.08}
+)
+
+ax.set_facecolor("#dbe9f1")
+world.plot(ax=ax, color="#f3f0e8", edgecolor="#555555", linewidth=1.0)
+focus.plot(ax=ax, color="#fbfaf6", edgecolor="none")
+admin.boundary.plot(ax=ax, color="#a9a9a9", linewidth=0.6, zorder=2)
+focus.boundary.plot(ax=ax, color="black", linewidth=1.6, zorder=2.5)
+ax.set_xlim(west, east)
+ax.set_ylim(south, north)
+ax.set_xticks([]); ax.set_yticks([])
+
+for name, x, y in [("GUINEA", -10.3, 10.15), ("CÔTE\nD'IVOIRE", -7.55, 7.2)]:
+    ax.text(x, y, name, ha="center", va="center", fontsize=10,
+            color="#8a8a8a", fontweight="bold", zorder=1)
+for name, x, y in [("Freetown", -13.23, 8.48), ("Monrovia", -10.80, 6.30)]:
+    ax.plot(x, y, marker="s", ms=4, color="black", zorder=6)
+    ax.annotate(name, (x, y), xytext=(4, -10), textcoords="offset points", fontsize=8, zorder=6)
+
+dots = ax.scatter([], [], s=[], linewidths=0, zorder=3)                 # all events so far
+ring = ax.scatter([], [], s=[], facecolors="none", edgecolors="black",  # the newest event(s)
+                  linewidths=1.8, zorder=5)
+title = ax.set_title("", fontsize=11, loc="left")
+
+handles = [Line2D([], [], marker="o", ls="", color=c, ms=8, label=f) for f, c in fcolors.items()]
+handles += [
+    Line2D([], [], marker="o", ls="", color="#555555", ms=8, label="Other actors"),
+    Line2D([], [], marker="o", ls="", mfc="none", mec="black", mew=1.8, ms=10, label="Current event"),
+]
+ax.legend(handles=handles, loc="lower left", frameon=True, framealpha=0.92,
+          fontsize=7.5, title="Faction", title_fontsize=8.5)
+
+tl.bar(range(len(months)), monthly.values, color="#bbbbbb", width=1.0)
+marker = tl.axvline(0, color="black", linewidth=1.5)
+jan = [i for i, m in enumerate(months) if m.month == 1]
+tl.set_xticks(jan)
+tl.set_xticklabels([months[i].year for i in jan], fontsize=8, rotation=45)
+tl.set_xlim(-0.5, len(months) - 0.5)
+tl.set_ylabel("Events", fontsize=8)
+tl.tick_params(axis="y", labelsize=7)
+for s in ["top", "right"]:
+    tl.spines[s].set_visible(False)
+
+n_steps = int(np.ceil(n / step))
+hold = fps * 3                                   # pause on the final map for 3 seconds
+
+def update(k):
+    i = min((k + 1) * step, n)                   # number of events shown so far
+    j = max(i - step, 0)                         # start of the newest batch
+    dots.set_offsets(xy[:i])
+    dots.set_sizes(sizes[:i])
+    dots.set_facecolors(rgba[:i])
+    ring.set_offsets(xy[j:i])
+    ring.set_sizes(sizes[j:i] * 4 + 60)
+    row = ev.iloc[i - 1]
+    marker.set_xdata([row["mi"], row["mi"]])
+    title.set_text(
+        f"{row['date'].strftime('%d %B %Y')}   ·   event {i} of {n}\n"
+        f"{row['side_a']} vs {row['side_b']}   ·   "
+        f"{row.get('where_coordinates', '')}, {row['country']}   ·   {int(row['best'])} deaths"
+    )
+    return dots, ring, marker, title
+
+anim = animation.FuncAnimation(fig, update, frames=n_steps + hold, interval=1000 / fps)
+
+# ---- save and show --------------------------------------------------------
+out = os.path.join(data_dir, "conflict_events")
+if animation.writers.is_available("ffmpeg"):
+    anim.save(out + ".mp4", writer="ffmpeg", fps=fps, dpi=110)
+    shown = Video(out + ".mp4", embed=True, html_attributes="controls loop", width=700)
+else:
+    anim.save(out + ".gif", writer="pillow", fps=fps, dpi=70)
+    shown = Image(filename=out + ".gif")
+plt.close(fig)
+print(f"{n} events, {ev['date'].min():%d %b %Y} to {ev['date'].max():%d %b %Y}")
+shown
+```
