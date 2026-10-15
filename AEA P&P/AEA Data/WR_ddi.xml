@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
-<codeBook ID="ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00013.dat-www.idhsdata.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+<codeBook ID="ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00018.dat-www.idhsdata.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
   <docDscr>
     <citation>
       <titlStmt>
         <titl>Codebook for an IPUMS DHS Data Extract</titl>
-        <subTitl>DDI 2.5 metadata describing the extract file  'idhs_00013.dat'</subTitl>
-        <IDNo>ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00013.dat-www.idhsdata.org</IDNo>
+        <subTitl>DDI 2.5 metadata describing the extract file  'idhs_00018.dat'</subTitl>
+        <IDNo>ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00018.dat-www.idhsdata.org</IDNo>
       </titlStmt>
       <rspStmt>
         <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
       </rspStmt>
       <prodStmt>
         <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
-        <prodDate date="2026-10-05">October 5, 2026</prodDate>
+        <prodDate date="2026-10-15">October 15, 2026</prodDate>
         <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
       </prodStmt>
       <distStmt>
@@ -24,14 +24,14 @@
   <stdyDscr>
     <citation>
       <titlStmt>
-        <titl>User Extract idhs_00013.dat</titl>
+        <titl>User Extract idhs_00018.dat</titl>
       </titlStmt>
       <rspStmt>
         <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
       </rspStmt>
       <prodStmt>
         <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
-        <prodDate date="2026-10-05">October 5, 2026</prodDate>
+        <prodDate date="2026-10-15">October 15, 2026</prodDate>
         <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
       </prodStmt>
       <distStmt>
@@ -42,7 +42,7 @@
         <serInfo>DOI:10.18128/D080.V12</serInfo>
       </serStmt>
       <verStmt>
-        <version date="2026-10-05"/>
+        <version date="2026-10-15"/>
       </verStmt>
     </citation>
     <stdyInfo>
@@ -57,24 +57,36 @@
         <topcClas vocab="IPUMS">Work Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Wealth index Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Education, general Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">General technical Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Migration Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Integrated geography Variables -- PERSON</topcClas>
-        <topcClas vocab="IPUMS">Possessions Variables -- PERSON</topcClas>
-        <topcClas vocab="IPUMS">Media exposure, general Variables -- PERSON</topcClas>
-        <topcClas vocab="IPUMS">Access to care Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Household demographic Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Housing Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">IPUMS Global Health Variables -- PERSON</topcClas>
       </subject>
       <sumDscr ID="sdatref-273">
         <timePrd date="2007" event="single">2007</timePrd>
         <nation abbr="lr">Liberia</nation>
       </sumDscr>
+      <sumDscr ID="sdatref-274">
+        <timePrd date="2013" event="single">2013</timePrd>
+        <nation abbr="lr">Liberia</nation>
+      </sumDscr>
       <sumDscr ID="sdatref-70">
         <timePrd date="2008" event="single">2008</timePrd>
         <nation abbr="sl">Sierra Leone</nation>
       </sumDscr>
+      <sumDscr ID="sdatref-301">
+        <timePrd date="2013" event="single">2013</timePrd>
+        <nation abbr="sl">Sierra Leone</nation>
+      </sumDscr>
       <notes><![CDATA[Additional notes on a sample that is part of this study:  Liberia 2007 Women
 ]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Liberia 2013 Women
+]]></notes>
       <notes><![CDATA[Additional notes on a sample that is part of this study:  Sierra Leone 2008 Women
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Sierra Leone 2013 Women
 ]]></notes>
     </stdyInfo>
     <dataAccs>
@@ -90,13 +102,12 @@ The licensing agreement for use of IPUMS DHS data requires that users supply us 
         <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
       </useStmt>
     </dataAccs>
-    <notes><![CDATA[User-provided description:  Final (Revision of (Data extract for single survey data, immediately post war on Liberia and Sierra Leone)
-)]]></notes>
-    <notes>This extract is a revision of the user's previous extract, ID 38882804.</notes>
+    <notes><![CDATA[User-provided description:  Revision of (New womens LBR/ SLE recode updated with GPS)]]></notes>
+    <notes>This extract is a revision of the user's previous extract, ID 39087585.</notes>
   </stdyDscr>
   <fileDscr ID="ExtractData">
     <fileTxt>
-      <fileName>idhs_00013.dat</fileName>
+      <fileName>idhs_00018.dat</fileName>
       <fileCont>Microdata records</fileCont>
       <fileStrc type="rectangular"/>
       <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
@@ -4086,8 +4097,58 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <concept vocab="IPUMS">Weights and subsample selection Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="URBAN" dcml="0" files="ExtractData" intrvl="discrete" name="URBAN">
+<var ID="INTRESULT" dcml="0" files="ExtractData" intrvl="discrete" name="INTRESULT">
   <location EndPos="215" StartPos="215" width="1"/>
+  <labl>Result of individual interview</labl>
+  <txt><![CDATA[INTRESULT (V015) reports the result of the individual interview. Code 1 represents a completed interview.  Only completed interview cases are included in the DHS women's individual recode files, which provide the source material for IPUMS-DHS.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Completed</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Not at home</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Postponed</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Partly completed</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Respondent Incapacitated</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <concept vocab="IPUMS">General technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="EVMARALLSAMP" dcml="0" files="ExtractData" intrvl="discrete" name="EVMARALLSAMP">
+  <location EndPos="216" StartPos="216" width="1"/>
+  <labl>Ever-married or all-women sample</labl>
+  <txt><![CDATA[EVMARALLSAMP (V020) indicates whether the sample includes only ever-married women or includes all women of childbearing age.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>All women sample</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Ever-married women sample</labl>
+  </catgry>
+  <concept vocab="IPUMS">General technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="URBAN" dcml="0" files="ExtractData" intrvl="discrete" name="URBAN">
+  <location EndPos="217" StartPos="217" width="1"/>
   <labl>Urban-rural status</labl>
   <txt><![CDATA[URBAN (V025) indicates whether the person's de facto residence was in an urban or rural location. The definition of urban varies across countries. See Comparability.]]></txt>
   <catgry>
@@ -4105,8 +4166,43 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="DEFACTORES" dcml="0" files="ExtractData" intrvl="discrete" name="DEFACTORES">
+  <location EndPos="219" StartPos="218" width="2"/>
+  <labl>De facto place of residence</labl>
+  <txt><![CDATA[DEFACTORES (V026) reports the type of place--city, town, or countryside--where the person was interviewed.]]></txt>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>City</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Capital or other large city</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Other city</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Town or countryside</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Town</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Countryside</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="RESIDEINTYR" dcml="0" files="ExtractData" intrvl="discrete" name="RESIDEINTYR">
-  <location EndPos="217" StartPos="216" width="2"/>
+  <location EndPos="221" StartPos="220" width="2"/>
   <labl>Years lived in place of residence</labl>
   <txt><![CDATA[RESIDEINTYR (V104) reports the number of years the woman had been living continuously in the village, town, or city where she was interviewed.]]></txt>
   <catgry>
@@ -4381,7 +4477,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PREVRESTYP" dcml="0" files="ExtractData" intrvl="discrete" name="PREVRESTYP">
-  <location EndPos="219" StartPos="218" width="2"/>
+  <location EndPos="223" StartPos="222" width="2"/>
   <labl>Type of place of previous residence</labl>
   <txt><![CDATA[PREVRESTYP (V105) reports the type of place--city, town, countryside, or a site abroad--where the person lived just before moving to the current place of residence.]]></txt>
   <catgry>
@@ -4456,7 +4552,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MIGRWARSTAY" dcml="0" files="ExtractData" intrvl="discrete" name="MIGRWARSTAY">
-  <location EndPos="220" StartPos="220" width="1"/>
+  <location EndPos="224" StartPos="224" width="1"/>
   <labl>Where lived during war: Stayed at home</labl>
   <txt><![CDATA[MIGRWARSTAY indicates whether the female respondent continued to live at home during the recent war. The Second Liberian Civil War lasted from 1999 to 2003.]]></txt>
   <catgry>
@@ -4475,7 +4571,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MIGRWARREL" dcml="0" files="ExtractData" intrvl="discrete" name="MIGRWARREL">
-  <location EndPos="221" StartPos="221" width="1"/>
+  <location EndPos="225" StartPos="225" width="1"/>
   <labl>Where lived during war: Stayed with friends/relatives</labl>
   <txt><![CDATA[MIGRWARREL indicates whether the female respondent lived with relatives or friends during the recent war. The Second Liberian Civil War lasted from 1999 to 2003.]]></txt>
   <catgry>
@@ -4494,7 +4590,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MIGRWARCAMP" dcml="0" files="ExtractData" intrvl="discrete" name="MIGRWARCAMP">
-  <location EndPos="222" StartPos="222" width="1"/>
+  <location EndPos="226" StartPos="226" width="1"/>
   <labl>Where lived during war: Went to a camp</labl>
   <txt><![CDATA[MIGRWARCAMP indicates whether the female respondent went to live at a camp during the recent war. The Second Liberian Civil War lasted from 1999 to 2003.]]></txt>
   <catgry>
@@ -4513,7 +4609,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MIGRWARBUSH" dcml="0" files="ExtractData" intrvl="discrete" name="MIGRWARBUSH">
-  <location EndPos="223" StartPos="223" width="1"/>
+  <location EndPos="227" StartPos="227" width="1"/>
   <labl>Where lived during war: Lived in the bush</labl>
   <txt><![CDATA[MIGRWARBUSH indicates whether the female respondent lived in the bush during the recent war. The Second Liberian Civil War lasted from 1999 to 2003.]]></txt>
   <catgry>
@@ -4532,7 +4628,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MIGRWARABROAD" dcml="0" files="ExtractData" intrvl="discrete" name="MIGRWARABROAD">
-  <location EndPos="224" StartPos="224" width="1"/>
+  <location EndPos="228" StartPos="228" width="1"/>
   <labl>Where lived during war: Went to a different country</labl>
   <txt><![CDATA[MIGRWARABROAD indicates whether the female respondent lived in a different country during the recent war. The Second Liberian Civil War lasted from 1999 to 2003.]]></txt>
   <catgry>
@@ -4551,7 +4647,7 @@ Note: The 6 implied decimal places in DVWEIGHT mean that the last six digits of 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MIGRWAROTH" dcml="0" files="ExtractData" intrvl="discrete" name="MIGRWAROTH">
-  <location EndPos="225" StartPos="225" width="1"/>
+  <location EndPos="229" StartPos="229" width="1"/>
   <labl>Where lived during war: Other</labl>
   <txt><![CDATA[MIGRWAROTH indicates whether the female respondent lived in some other place during the recent war. The meaning of "other" must be interpreted relative to the specific categories included in a particular sample.
 
@@ -4572,7 +4668,7 @@ The Second Liberian Civil War lasted from 1999 to 2003.]]></txt>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="GEO_LR2007_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_LR2007_2019">
-  <location EndPos="226" StartPos="226" width="1"/>
+  <location EndPos="230" StartPos="230" width="1"/>
   <labl>Liberia regions, 2007-2019 [integrated; GIS]</labl>
   <txt><![CDATA[GEO_LR2007_2019 reports the region of Liberia where the respondent was interviewed. The variable is integrated to yield units with consistent boundaries across samples for Liberia.
 
@@ -4602,8 +4698,79 @@ Download an integrated GIS map (in shapefile format) for Liberia.]]></txt>
   <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="GEO_LR2013_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_LR2013_2019">
+  <location EndPos="232" StartPos="231" width="2"/>
+  <labl>Liberia counties, 2013-2019 [integrated; GIS]</labl>
+  <txt><![CDATA[GEO_LR2013_2019 reports the county of Liberia where the respondent was interviewed. DHS units in GEO_ LR2013_2019 are equivalent to counties.
+
+Other sample years have their own sample-specific geography variables for Liberia. There is also an integrated variable, GEO_LR2007_2019, that provides spatially consistent units over time at lesser geographic detail.
+
+Download an integrated GIS map (in shapefile format) for Liberia.]]></txt>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Bomi</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Bong</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Grand Bassa</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Grand Cape Mount</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Grand Gedeh</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>Grand Kru</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Lofa</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Margibi</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>Maryland</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Montserrado</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>Nimba</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>River Cess</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>Sinoe</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>River Gee</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>Gbarpolu</labl>
+  </catgry>
+  <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="GEO_SL2008_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_SL2008_2019">
-  <location EndPos="227" StartPos="227" width="1"/>
+  <location EndPos="233" StartPos="233" width="1"/>
   <labl>Sierra Leone regions, 2008-2019 [integrated; GIS]</labl>
   <txt><![CDATA[GEO_SL2008_2019 reports the region of Sierra Leone where the respondent was interviewed. The variable is integrated to yield units with consistent boundaries across samples for Sierra Leone.
 
@@ -4629,8 +4796,71 @@ Download an integrated GIS map (in shapefile format) for Sierra Leone.]]></txt>
   <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="GEOALT_SL2013_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEOALT_SL2013_2019">
+  <location EndPos="235" StartPos="234" width="2"/>
+  <labl>Sierra Leone districts, 2013-2019 [integrated; GIS}</labl>
+  <txt><![CDATA[GEOALT_ SL2013_2019 reports the district of Sierra Leone where the respondent was interviewed. The variable is integrated to yield units with consistent boundaries across samples.
+
+Labels identify the modern geographic units (districts) contained in each integrated region. Each sample also has its own non-integrated geography variable. The 2008 survey does not include sufficient detail, and is not included in GEOALT_SL2013_2019. See GEO_SL2008_2019 for comparable geography across all Sierra Leone samples.
+
+Download an integrated GIS map (in shapefile format) for Sierra Leone.]]></txt>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Kailahun</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Kenema</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Kono</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Bombali, Port Loko, Karene</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Koinadugu, Falaba</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Tonkolili</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Kambia</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Bo</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Bonthe</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>Moyamba</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>Pujehun</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Western Rural</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>Western Urban</labl>
+  </catgry>
+  <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="AGE" dcml="0" files="ExtractData" intrvl="discrete" name="AGE">
-  <location EndPos="229" StartPos="228" width="2"/>
+  <location EndPos="237" StartPos="236" width="2"/>
   <labl>Age</labl>
   <txt><![CDATA[AGE (V012) reports the woman's age. DHS surveys collect information about the woman's age through questions about age at last birthday and date of birth.  DHS Recode Manuals provide the following information about how the AGE variable is calculated:
 Current age in completed years is calculated from the century month code of the date of birth of the respondent (V011) and the century month code of the date of interview (V008). In a few cases the age in the data file will be different from that reported by the respondent when the respondent's birthday was in the month of interview, but she had not yet had her birthday. If the respondent correctly reported her age at her last birthday (and not her age at her next birthday) then the calculated age was rounded up from the reported age, to avoid inconsistencies between the age and the century month code for the birth.]]></txt>
@@ -4858,7 +5088,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AGE5YEAR" dcml="0" files="ExtractData" intrvl="discrete" name="AGE5YEAR">
-  <location EndPos="231" StartPos="230" width="2"/>
+  <location EndPos="239" StartPos="238" width="2"/>
   <labl>Age in 5 year groups</labl>
   <txt><![CDATA[AGE5YEAR (V013) reports the woman's age in 5-year groups, based on data from the AGE (V012) variable. The age range of women interviewed varies across samples. See Comparability.]]></txt>
   <catgry>
@@ -4925,7 +5155,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="RESIDENT" dcml="0" files="ExtractData" intrvl="discrete" name="RESIDENT">
-  <location EndPos="232" StartPos="232" width="1"/>
+  <location EndPos="240" StartPos="240" width="1"/>
   <labl>Usual resident or visitor</labl>
   <txt><![CDATA[RESIDENT (V135) indicates whether the woman was a usual resident of the household or was just visiting there. As defined by the RESIDENT variable, a visitor could potentially reside in the city, town, or village where the interview took place but would have answered "No" to the question, "Does (NAME) usually live here [in this dwelling unit]?" on the household questionnaire.]]></txt>
   <catgry>
@@ -4943,8 +5173,119 @@ Current age in completed years is calculated from the century month code of the 
   <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="RELATE" dcml="0" files="ExtractData" intrvl="discrete" name="RELATE">
+  <location EndPos="242" StartPos="241" width="2"/>
+  <labl>Woman's relationship to HH head</labl>
+  <txt><![CDATA[RELATE (V150) reports the woman's relationship to the head of the household, based on a question in the household questionnaire.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Head</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Wife</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Daughter or son</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Daughter- or son-in-law</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Grandchild</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Mother or father</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>Parent-in-law</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Sister or brother</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Co-spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Adopted/foster/step child</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Adopted/foster child</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Stepchild</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Other relative</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Niece or nephew by blood</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Niece or nephew by marriage</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Niece or nephew unspecified</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Sibling-in-law</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Aunt or uncle</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>Grandparent</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>Great grandchild</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Nonrelative</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Domestic servant/employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>Herdboy</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>Tenant</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="RELIGION" dcml="0" files="ExtractData" intrvl="discrete" name="RELIGION">
-  <location EndPos="236" StartPos="233" width="4"/>
+  <location EndPos="246" StartPos="243" width="4"/>
   <labl>Religion</labl>
   <txt><![CDATA[RELIGION (V130) reports the respondent's religion. While the categories and codes for the religion variable in the original DHS files are country-specific, IPUMS-DHS uses a 4-digit composite coding system to fit these diverse categories into a single variable without losing information. Â See Comparability.]]></txt>
   <catgry>
@@ -5259,7 +5600,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ETHNICITYLR" dcml="0" files="ExtractData" intrvl="discrete" name="ETHNICITYLR">
-  <location EndPos="238" StartPos="237" width="2"/>
+  <location EndPos="248" StartPos="247" width="2"/>
   <labl>Ethnicity, Liberia</labl>
   <txt><![CDATA[ETHNICITYLR (V131LR) is a variable specific to Liberia that reports responses to a question about the woman's ethnicity.  The groups identified vary across samples.  See Comparability.]]></txt>
   <catgry>
@@ -5350,7 +5691,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ETHNICITYSL" dcml="0" files="ExtractData" intrvl="discrete" name="ETHNICITYSL">
-  <location EndPos="240" StartPos="239" width="2"/>
+  <location EndPos="250" StartPos="249" width="2"/>
   <labl>Ethnicity, Sierra Leone</labl>
   <txt><![CDATA[ETHNICITYSL (V131SL) reports the female respondent's ethnic group, using categories country-specific to Sierra Leone.]]></txt>
   <catgry>
@@ -5437,7 +5778,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MARSTAT" dcml="0" files="ExtractData" intrvl="discrete" name="MARSTAT">
-  <location EndPos="242" StartPos="241" width="2"/>
+  <location EndPos="252" StartPos="251" width="2"/>
   <labl>Woman's current marital or union status</labl>
   <txt><![CDATA[MARSTAT (V501) reports the woman's current marital status. Response categories and question wording vary across surveys.  See Comparability.]]></txt>
   <catgry>
@@ -5491,8 +5832,43 @@ Current age in completed years is calculated from the century month code of the 
   <concept vocab="IPUMS">Marriage and cohabitation Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="EVERMARRIED" dcml="0" files="ExtractData" intrvl="discrete" name="EVERMARRIED">
+  <location EndPos="254" StartPos="253" width="2"/>
+  <labl>Ever been married</labl>
+  <txt><![CDATA[For women who are not currently married or living with a man, EVERMARRIED (V535) reports the woman's relationship history as "No [never married/in union]," "Formerly married," or "Lived with a man."]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Formerly married</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Formerly married with certificate</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Formerly married by custom</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Lived with a man</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Marriage and cohabitation Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="CHEB" dcml="0" files="ExtractData" intrvl="discrete" name="CHEB">
-  <location EndPos="244" StartPos="243" width="2"/>
+  <location EndPos="256" StartPos="255" width="2"/>
   <labl>Total children ever born</labl>
   <txt><![CDATA[CHEB (V201) reports the total number of children ever born to the respondent.  The number reported in CHEB is the sum of a series of variables covering the total number of sons and daughters who are living at home, living away from home, or who have died (V202 to V207).   
 
@@ -5712,27 +6088,846 @@ The number of births reported in CHEB will match the number of entries in the bi
   <concept vocab="IPUMS">Fertility Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="BANKACC" dcml="0" files="ExtractData" intrvl="discrete" name="BANKACC">
-  <location EndPos="245" StartPos="245" width="1"/>
-  <labl>HH has bank account</labl>
-  <txt><![CDATA[BANKACC (HV247) indicates whether any member of the household has a bank account.
-
-The information in BANKACC is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+<var ID="HHEADAGE" dcml="0" files="ExtractData" intrvl="discrete" name="HHEADAGE">
+  <location EndPos="258" StartPos="257" width="2"/>
+  <labl>Age of household head</labl>
+  <txt><![CDATA[HHEADAGE (V152) reports the age of the head of the household.]]></txt>
   <catgry>
-    <catValu>0</catValu>
-    <labl>No</labl>
+    <catValu>02</catValu>
+    <labl>2</labl>
   </catgry>
   <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>51</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>52</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>53</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>54</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>55</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>56</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>57</labl>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+    <labl>58</labl>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+    <labl>59</labl>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+    <labl>60</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>61</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>62</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>63</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>64</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>65</labl>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+    <labl>66</labl>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+    <labl>67</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>68</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>69</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>70</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>71</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>72</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>73</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>74</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>75</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>76</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>77</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>78</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>79</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>80</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>81</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>82</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>83</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>84</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>85</labl>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+    <labl>86</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>87</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>88</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>89</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>90</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>91</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>92</labl>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+    <labl>93</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>94</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>95</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>96</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>97+</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHEADAGEHH" dcml="0" files="ExtractData" intrvl="discrete" name="HHEADAGEHH">
+  <location EndPos="260" StartPos="259" width="2"/>
+  <labl>Age of household head (from HH record)</labl>
+  <txt><![CDATA[HHEADAGEHH (HV220) reports the age of the head of the household.
+
+The information in HHEADAGEHH is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>51</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>52</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>53</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>54</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>55</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>56</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>57</labl>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+    <labl>58</labl>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+    <labl>59</labl>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+    <labl>60</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>61</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>62</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>63</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>64</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>65</labl>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+    <labl>66</labl>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+    <labl>67</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>68</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>69</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>70</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>71</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>72</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>73</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>74</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>75</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>76</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>77</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>78</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>79</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>80</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>81</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>82</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>83</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>84</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>85</labl>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+    <labl>86</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>87</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>88</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>89</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>90</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>91</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>92</labl>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+    <labl>93</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>94</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>95+</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHEADSEX" dcml="0" files="ExtractData" intrvl="discrete" name="HHEADSEX">
+  <location EndPos="261" StartPos="261" width="1"/>
+  <labl>Sex of household head</labl>
+  <txt><![CDATA[HHEADSEX (V151) reports the sex of the head of the household.]]></txt>
+  <catgry>
     <catValu>1</catValu>
-    <labl>Yes</labl>
+    <labl>Male</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Female</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHEADSEXHH" dcml="0" files="ExtractData" intrvl="discrete" name="HHEADSEXHH">
+  <location EndPos="262" StartPos="262" width="1"/>
+  <labl>Sex of household head (from hh record)</labl>
+  <txt><![CDATA[HHEADSEXHH (HV219) reports the sex of the head of the household.
+
+The information in HHEADSEXHH is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Male</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Female</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Transgender</labl>
   </catgry>
   <catgry>
     <catValu>6</catValu>
     <labl>Non-resident</labl>
-  </catgry>
-  <catgry>
-    <catValu>7</catValu>
-    <labl>Don't know</labl>
   </catgry>
   <catgry>
     <catValu>8</catValu>
@@ -5742,11 +6937,247 @@ The information in BANKACC is taken from the household record and applies to reg
     <catValu>9</catValu>
     <labl>NIU (not in universe)</labl>
   </catgry>
-  <concept vocab="IPUMS">Possessions Variables -- PERSON</concept>
+  <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FAMSTRUCTR" dcml="0" files="ExtractData" intrvl="discrete" name="FAMSTRUCTR">
+  <location EndPos="263" StartPos="263" width="1"/>
+  <labl>Relationship structure in HH</labl>
+  <txt><![CDATA[FAMSTRUCTR (HV217) indicates the relationship structure (no adults, one adult, two related adults of the opposite sex, two related adults of the same sex, three or more related adults, or unrelated adults) in the household. Only usual (de jure) household members aged 15 and over are considered in determining the household's relationship structure. FAMSTRUCTR is a constructed variable, based on information about each household member's age, sex, and relationship to the householder, which was collected when completing the listing of persons in the household at the time of the survey.
+
+The information in FAMSTRUCTR is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No adults</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>One adult</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Two adults, opp sex</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Two adults, same sex</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Three plus related adults</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Unrelated adults</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SLEEPROOMS" dcml="0" files="ExtractData" intrvl="discrete" name="SLEEPROOMS">
+  <location EndPos="265" StartPos="264" width="2"/>
+  <labl>Number of rooms in HH used for sleeping</labl>
+  <txt><![CDATA[SLEEPROOMS (HV216) reports the number of rooms in the household used for sleeping.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35+</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROOMPPHH" dcml="0" files="ExtractData" intrvl="contin" name="ROOMPPHH">
+  <location EndPos="269" StartPos="266" width="4"/>
+  <labl>Sleeping rooms per household member</labl>
+  <txt><![CDATA[ROOMPPHH reports the number of sleeping rooms per household member based on the variables SLEEPROOMS and HHMEMBERS.  This variable has been calculated by IPUMS using Chapter 2 of the DHS Guide to Statistics 8.]]></txt>
+  <codInstr><![CDATA[This is a numeric variable with up to two decimal places representing an average number of sleeping rooms per household member.]]></codInstr>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROOMPPPSU" dcml="0" files="ExtractData" intrvl="contin" name="ROOMPPPSU">
+  <location EndPos="273" StartPos="270" width="4"/>
+  <labl>Sleeping rooms per household member (average among households in PSU)</labl>
+  <txt><![CDATA[ROOMPPPSU reports the average number of sleeping rooms per household member, in the primary sampling unit, based on the variables SLEEPROOMS and HHMEMBERS.  This variable has been calculated by IPUMS using Chapter 2 of the DHS Guide to Statistics 8 and weighted using the variable HHWEIGHT.]]></txt>
+  <codInstr><![CDATA[This is a numeric variable that represents an average number of sleeping rooms per household member with up to two decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROOMPPSAMPLE" dcml="0" files="ExtractData" intrvl="contin" name="ROOMPPSAMPLE">
+  <location EndPos="277" StartPos="274" width="4"/>
+  <labl>Sleeping rooms per household member (average among households in sample)</labl>
+  <txt><![CDATA[ROOMPPSAMPLE reports the average number of sleeping rooms per household member, in the DHS survey sample, based on the variables SLEEPROOMS and HHMEMBERS.  This variable has been calculated by IPUMS using Chapter 2 of the DHS Guide to Statistics 8 and weighted using the variable HHWEIGHT.]]></txt>
+  <codInstr><![CDATA[This is a numeric variable that represents an average number of sleeping rooms per household member with up to two decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CURRWORK" dcml="0" files="ExtractData" intrvl="discrete" name="CURRWORK">
-  <location EndPos="247" StartPos="246" width="2"/>
+  <location EndPos="279" StartPos="278" width="2"/>
   <labl>Currently working</labl>
   <txt><![CDATA[CURRWORK (V714) indicates whether the woman is currently working at a job or business.  To distinguish employment from household labor, many surveys included a preface such as the following: "As you know, some women take up jobs for which they are paid in cash or in kind.  Others sell things, have a small business or work on the family farm or in the family business." Women who have worked outside of their own housework in the last 12 months and been paid in cash, cash and in-kind, or only in-kind payments are included as working, although the survey questions vary in who receives an affirmative response. See Comparability.]]></txt>
   <catgry>
@@ -5776,8 +7207,31 @@ The information in BANKACC is taken from the household record and applies to reg
   <concept vocab="IPUMS">Work Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="JOBABSENT" dcml="0" files="ExtractData" intrvl="discrete" name="JOBABSENT">
+  <location EndPos="280" StartPos="280" width="1"/>
+  <labl>Woman has job from which she was absent in past week</labl>
+  <txt><![CDATA[For women who did not work in the past 7 days, JOBABSENT (V714A) indicates whether the woman had a job or business from which she was temporarily absent, due to leave, illness, vacation, maternity leave, or other reasons.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="WKCURRJOB" dcml="0" files="ExtractData" intrvl="discrete" name="WKCURRJOB">
-  <location EndPos="249" StartPos="248" width="2"/>
+  <location EndPos="282" StartPos="281" width="2"/>
   <labl>Woman's occupation</labl>
   <txt><![CDATA[WKCURRJOB (V717) reports the occupation of the respondent in somewhat standardized categories. The categories included, and the degree of detail within broad categories (e.g., self-employed versus employee in agriculture, or simply agriculture), vary across samples. IPUMS-DHS employs composite coding to maximize comparability across samples (using the first digit of the codes to indicate broad job categories) without loss of detailed information (preserved in the second digit).
 
@@ -5861,29 +7315,49 @@ The category "agriculture" includes fishermen, foresters, breeders, and hunters 
   <concept vocab="IPUMS">Work Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="WKWORKLASTYR" dcml="0" files="ExtractData" intrvl="discrete" name="WKWORKLASTYR">
-  <location EndPos="251" StartPos="250" width="2"/>
-  <labl>Respondent worked recently</labl>
-  <txt><![CDATA[WKWORKLASTYR (V731) indicates whether the respondent worked recently (i.e., was currently working, was on leave from a job in the past 7 days, or worked in the past year).]]></txt>
-  <catgry>
-    <catValu>00</catValu>
-    <labl>No</labl>
-  </catgry>
+<var ID="WHOWORKFOR" dcml="0" files="ExtractData" intrvl="discrete" name="WHOWORKFOR">
+  <location EndPos="284" StartPos="283" width="2"/>
+  <labl>Whom the respondent works for</labl>
+  <txt><![CDATA[WHOWORKFOR (V719) indicates whether the respondent works for a family member, for someone else, or is self-employed.]]></txt>
   <catgry>
     <catValu>10</catValu>
-    <labl>Yes</labl>
+    <labl>Works for self</labl>
   </catgry>
   <catgry>
     <catValu>11</catValu>
-    <labl>Worked in the past year</labl>
+    <labl>Self-employed</labl>
   </catgry>
   <catgry>
     <catValu>12</catValu>
-    <labl>Currently working</labl>
+    <labl>Employer</labl>
   </catgry>
   <catgry>
-    <catValu>13</catValu>
-    <labl>Has a job, but on leave last 7 days</labl>
+    <catValu>20</catValu>
+    <labl>Works for someone else</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>For family member (unpaid)</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>For family member</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>For someone else (unpaid)</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>For someone else</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Works for self and someone else</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>Other</labl>
   </catgry>
   <catgry>
     <catValu>98</catValu>
@@ -5896,8 +7370,35 @@ The category "agriculture" includes fishermen, foresters, breeders, and hunters 
   <concept vocab="IPUMS">Work Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="WKHOMEAWAY" dcml="0" files="ExtractData" intrvl="discrete" name="WKHOMEAWAY">
+  <location EndPos="285" StartPos="285" width="1"/>
+  <labl>Woman works at home or away from home</labl>
+  <txt><![CDATA[WKHOMEAWAY (V721) indicates whether the respondent currently works at home or away from home.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>At home</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Away</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Both at home and away</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="WKEMPLOYWHEN" dcml="0" files="ExtractData" intrvl="discrete" name="WKEMPLOYWHEN">
-  <location EndPos="253" StartPos="252" width="2"/>
+  <location EndPos="287" StartPos="286" width="2"/>
   <labl>Respondent works all year, seasonally, or occasionally</labl>
   <txt><![CDATA[WKEMPLOYWHEN (V732) indicates whether the woman works throughout the year, seasonally, or occasionally.]]></txt>
   <catgry>
@@ -5944,7 +7445,7 @@ The category "agriculture" includes fishermen, foresters, breeders, and hunters 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="HUSJOB" dcml="0" files="ExtractData" intrvl="discrete" name="HUSJOB">
-  <location EndPos="255" StartPos="254" width="2"/>
+  <location EndPos="289" StartPos="288" width="2"/>
   <labl>Partner's occupation</labl>
   <txt><![CDATA[HUSJOB (V705) reports the occupation of the woman's husband/partner in somewhat standardized categories.  The categories included, and the degree of detail within broad categories (e.g., self-employed versus employee in agriculture, or simply agriculture), vary across samples.  IPUMS-DHS employs composite coding to maximize comparability across samples (using the first digit of the codes to indicate broader job categories) without loss of detailed information (preserved in the second digit).  
 
@@ -6041,7 +7542,7 @@ The category "agriculture" includes fishermen, foresters, breeders, and hunters 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WEALTHQ" dcml="0" files="ExtractData" intrvl="discrete" name="WEALTHQ">
-  <location EndPos="256" StartPos="256" width="1"/>
+  <location EndPos="290" StartPos="290" width="1"/>
   <labl>Household wealth index in quintiles</labl>
   <txt><![CDATA[WEALTHQ (V190) refers to the relative wealth of the household where the woman lives, divided into quintiles from the poorest (code 1) to the richest (code 5).  The wealth index is defined in the DHS Recode Manuals as follows:
 The wealth index is a composite measure of a household's cumulative living standard. The wealth index is calculated using easy-to-use data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities.Generated with a statistical procedure known as principal components analysis, the wealth index places individual households on a continuous scale of relative wealth. DHS separates all interviewed households into five quintiles of wealth.For additional information about the calculation and meaning of the wealth index, users should consult the summary information about the wealth index on The DHS Program website and/or the DHS Comparative Report on "The DHS Wealth Index"
@@ -6077,7 +7578,7 @@ The variables used to calculate wealth index quintiles and the level of wealth i
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WEALTHS" dcml="5" files="ExtractData" intrvl="contin" name="WEALTHS">
-  <location EndPos="268" StartPos="257" width="12"/>
+  <location EndPos="302" StartPos="291" width="12"/>
   <labl>Wealth index factor score (5 decimals)</labl>
   <txt><![CDATA[WEALTHS (V191) refers to the householdâs wealth index value generated by the product of standardized scores (z-scores) and factor coefficient scores (factor loadings) of wealth indicators. Most researchers will want to use instead the complementary variable WEALTHQ (V190), which reports quintile ranking (from poorest to richest) of the woman's household, in terms of wealth score, for a given sample. 
 
@@ -6089,7 +7590,7 @@ The variables used to calculate wealth index scores are sample-specific. See Com
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="LIT2" dcml="0" files="ExtractData" intrvl="discrete" name="LIT2">
-  <location EndPos="270" StartPos="269" width="2"/>
+  <location EndPos="304" StartPos="303" width="2"/>
   <labl>Literacy, based on reading passage</labl>
   <txt><![CDATA[LIT2 (V155) indicates whether the woman could read. This variable is available beginning with Phase 4 of the DHS.
 
@@ -6132,7 +7633,7 @@ For Phases 1-3 of the DHS, information on literacy was collected using a differe
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="LITBRIG" dcml="0" files="ExtractData" intrvl="discrete" name="LITBRIG">
-  <location EndPos="272" StartPos="271" width="2"/>
+  <location EndPos="306" StartPos="305" width="2"/>
   <labl>Literacy bridging variable</labl>
   <txt><![CDATA[LITBRIG serves as a bridging variable between two approaches to collecting information on literacy.  Initially, respondents were asked, "Can you read a letter or newspaper easily, with difficulty, or not at all?"  In many countries, persons with secondary or higher levels of schooling were presumed to "read easily," but coding criteria varied across countries. 
 
@@ -6181,7 +7682,7 @@ See Comparability for more information.]]></txt>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="LITPROGRAMEV" dcml="0" files="ExtractData" intrvl="discrete" name="LITPROGRAMEV">
-  <location EndPos="273" StartPos="273" width="1"/>
+  <location EndPos="307" StartPos="307" width="1"/>
   <labl>Woman ever attended literacy program</labl>
   <txt><![CDATA[LITPROGRAMEV (V156) indicates whether the respondent ever participated in a literacy program or any other program that involves learning to read and write (not including primary school).]]></txt>
   <catgry>
@@ -6204,7 +7705,7 @@ See Comparability for more information.]]></txt>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="EDUCLVL" dcml="0" files="ExtractData" intrvl="discrete" name="EDUCLVL">
-  <location EndPos="274" StartPos="274" width="1"/>
+  <location EndPos="308" StartPos="308" width="1"/>
   <labl>Highest educational level</labl>
   <txt><![CDATA[For women who ever went to school, EDUCLVL (V106) reports the highest level of school they attended. Countries vary in the gradations of their school systems, but EDUCLVL is a standardized variable reporting level of education in four broad categories: No education, Primary, Secondary, and Higher. 
 
@@ -6232,8 +7733,113 @@ The DHS recode manuals state, "In some countries the educational system does not
   <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="YRSCHL" dcml="0" files="ExtractData" intrvl="discrete" name="YRSCHL">
+  <location EndPos="310" StartPos="309" width="2"/>
+  <labl>Highest year of education in level</labl>
+  <txt><![CDATA[For women who ever attended school, YRSCHL (V107) reports the number of years of education completed at the highest level of schooling achieved (primary, secondary, or higher), as reported in EDUCLVL (V106). See Comparability.
+
+For the woman's total years of education, see EDYRTOTAL (V133).]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Inconsistent</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="EDYRTOTAL" dcml="0" files="ExtractData" intrvl="discrete" name="EDYRTOTAL">
-  <location EndPos="276" StartPos="275" width="2"/>
+  <location EndPos="312" StartPos="311" width="2"/>
   <labl>Total years education</labl>
   <txt><![CDATA[EDYRTOTAL (V133) reports the woman's education level in single years. This variable is constructed from responses to EDUCLVL (V106) and YRSCHL (V107) as follows:
 If EDUCLVL = "No education," EDYRTOTAL = "0"If EDUCLVL = "Primary," EDYRTOTAL = YRSCHLIf EDUCLVL = "Secondary," EDYRTOTAL = YRSCHL + xIf EDUCLVL = "Higher," EDYRTOTAL = YRSCHL + yIf EDUCLVL = "Missing," EDYRTOTAL = "Missing"In the above equations, "x" equals the number of years needed to complete primary education, and "y" equals the number of years needed to complete primary and secondary education. The values of "x" and "y" are country-specific.]]></txt>
@@ -6364,35 +7970,144 @@ If EDUCLVL = "No education," EDYRTOTAL = "0"If EDUCLVL = "Primary," EDYRTOTAL = 
   <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="NEWSBRIG" dcml="0" files="ExtractData" intrvl="discrete" name="NEWSBRIG">
-  <location EndPos="278" StartPos="277" width="2"/>
-  <labl>Reads newspaper: Bridging variable</labl>
-  <txt><![CDATA[NEWSBRIG serves as a bridging variable between two approaches to collecting information on exposure to newspapers and magazines.  For DHS Phases 1-3, respondents were asked whether they read a newspaper or magazine at least once a week (NEWSWK (V109)).  Beginning in DHS Phase 4, respondents were asked how often they read newspapers or magazines (NEWSFQ (V157)). 
+<var ID="HUSEDLVL" dcml="0" files="ExtractData" intrvl="discrete" name="HUSEDLVL">
+  <location EndPos="313" StartPos="313" width="1"/>
+  <labl>Partner's educational level</labl>
+  <txt><![CDATA[For women who had ever been married or lived with a man, HUSEDLVL (V701) reports the highest level of school attended by their most recent husband/partner. Countries vary in the gradations of their school systems, but HUSEDLVL is a standardized variable reporting the level of education in four categories: No education, Primary, Secondary, and Higher. 
 
-NEWSBRIG uses composite coding to combine data from these two approaches. See Comparability for more information.]]></txt>
+The DHS recode manuals state, "In some countries the educational system does not fit naturally within this scheme, and a different categorization was used for the Final Report. In this case, this variable is constructed as accurately as possible from the country's own scheme, and the variable used for the Final Report is included as a country-specific variable."]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No education</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Primary</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Secondary</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Higher</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HUSEDYR" dcml="0" files="ExtractData" intrvl="discrete" name="HUSEDYR">
+  <location EndPos="315" StartPos="314" width="2"/>
+  <labl>Partner's highest year of education in level</labl>
+  <txt><![CDATA[For women whose most recent husband/partner had ever attended school, HUSEDYR (V702) reports the number of years of schooling completed by their husband/partner at the educational level (primary, secondary, or higher) reported in HUSEDLVL (V701).
+
+For the husband's total years of education, see HUSEDYRS (V715).]]></txt>
   <catgry>
     <catValu>00</catValu>
-    <labl>No</labl>
+    <labl>0</labl>
   </catgry>
   <catgry>
     <catValu>01</catValu>
-    <labl>No, not at all</labl>
+    <labl>1</labl>
   </catgry>
   <catgry>
     <catValu>02</catValu>
-    <labl>No, less than once a week</labl>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
   </catgry>
   <catgry>
     <catValu>10</catValu>
-    <labl>Yes</labl>
+    <labl>10</labl>
   </catgry>
   <catgry>
     <catValu>11</catValu>
-    <labl>At least once a week</labl>
+    <labl>11</labl>
   </catgry>
   <catgry>
     <catValu>12</catValu>
-    <labl>Almost every day</labl>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Inconsistent</labl>
   </catgry>
   <catgry>
     <catValu>97</catValu>
@@ -6406,104 +8121,334 @@ NEWSBRIG uses composite coding to combine data from these two approaches. See Co
     <catValu>99</catValu>
     <labl>NIU (not in universe)</labl>
   </catgry>
-  <concept vocab="IPUMS">Media exposure, general Variables -- PERSON</concept>
+  <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="BHCMONEY" dcml="0" files="ExtractData" intrvl="discrete" name="BHCMONEY">
-  <location EndPos="280" StartPos="279" width="2"/>
-  <labl>Barrier to woman's health care: Lack money for treatment</labl>
-  <txt><![CDATA[BHCMONEY (V467C) indicates whether the woman reported "getting money needed for treatment" as a barrier to getting medical care for herself.]]></txt>
-  <catgry>
-    <catValu>10</catValu>
-    <labl>Not a big problem</labl>
-  </catgry>
-  <catgry>
-    <catValu>11</catValu>
-    <labl>No problem at all</labl>
-  </catgry>
-  <catgry>
-    <catValu>12</catValu>
-    <labl>Small problem only</labl>
-  </catgry>
-  <catgry>
-    <catValu>20</catValu>
-    <labl>Is big problem</labl>
-  </catgry>
-  <catgry>
-    <catValu>98</catValu>
-    <labl>Missing</labl>
-  </catgry>
-  <catgry>
-    <catValu>99</catValu>
-    <labl>NIU (not in universe)</labl>
-  </catgry>
-  <concept vocab="IPUMS">Access to care Variables -- PERSON</concept>
-  <varFormat schema="other" type="numeric"/>
-</var>
-<var ID="BHCDISTANCE" dcml="0" files="ExtractData" intrvl="discrete" name="BHCDISTANCE">
-  <location EndPos="282" StartPos="281" width="2"/>
-  <labl>Barrier to woman's health care: Distance to facility</labl>
-  <txt><![CDATA[BHCDISTANCE (V467D) indicates whether the woman reported "the distance to the health facility" as a barrier to getting medical care for herself.]]></txt>
-  <catgry>
-    <catValu>10</catValu>
-    <labl>Not a big problem</labl>
-  </catgry>
-  <catgry>
-    <catValu>11</catValu>
-    <labl>No problem at all</labl>
-  </catgry>
-  <catgry>
-    <catValu>12</catValu>
-    <labl>Small problem</labl>
-  </catgry>
-  <catgry>
-    <catValu>20</catValu>
-    <labl>Is big problem</labl>
-  </catgry>
-  <catgry>
-    <catValu>98</catValu>
-    <labl>Missing</labl>
-  </catgry>
-  <catgry>
-    <catValu>99</catValu>
-    <labl>NIU (not in universe)</labl>
-  </catgry>
-  <concept vocab="IPUMS">Access to care Variables -- PERSON</concept>
-  <varFormat schema="other" type="numeric"/>
-</var>
-<var ID="NEWSFREQ_GH" dcml="0" files="ExtractData" intrvl="discrete" name="NEWSFREQ_GH">
-  <location EndPos="284" StartPos="283" width="2"/>
-  <labl>Frequency reads newspaper (IPUMS Global Health)</labl>
-  <txt><![CDATA[NEWSFREQ_GH reports if and how often the respondent reads the newspaper. 
-This variable is consistently codes across the IPUMS Global Health projects from the project specific variables: 
-IPUMS DHS: NEWSBRIGIPUMS MICS: NEWSFREQFound on the Women unit of analysis for both IPUMS MICS and IPUMS DHS.]]></txt>
+<var ID="HUSEDYRS" dcml="0" files="ExtractData" intrvl="discrete" name="HUSEDYRS">
+  <location EndPos="317" StartPos="316" width="2"/>
+  <labl>Partner's education in total years schooling</labl>
+  <txt><![CDATA[For women who had ever been married or lived with a man, HUSEDYRS (V715) reports the education of the woman's most recent husband/partner in single years. This variable is constructed from responses to HUSEDLVL (V701) and HUSEDYR (V702) as follows:
+If HUSEDLVL = "No education," HUSEDYRS = "0"If HUSEDLVL = "Primary," HUSEDYRS = HUSEDYRIf HUSEDLVL = "Secondary," HUSEDYRS = HUSEDYR + xIf HUSEDLVL = "Higher," HUSEDYRS = HUSEDYR + yIf HUSEDLVL = "Missing," HUSEDYRS = "Missing"In the above equations, "x" equals the number of years needed to complete primary education, and "y" equals the number of years needed to complete primary and secondary education. The values of "x" and "y" are country-specific.]]></txt>
   <catgry>
     <catValu>00</catValu>
-    <labl>No</labl>
+    <labl>0</labl>
   </catgry>
   <catgry>
     <catValu>01</catValu>
-    <labl>No, not at all</labl>
+    <labl>1</labl>
   </catgry>
   <catgry>
     <catValu>02</catValu>
-    <labl>No, less than once a week</labl>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
   </catgry>
   <catgry>
     <catValu>10</catValu>
-    <labl>Yes</labl>
+    <labl>10</labl>
   </catgry>
   <catgry>
     <catValu>11</catValu>
-    <labl>At least once a week</labl>
+    <labl>11</labl>
   </catgry>
   <catgry>
     <catValu>12</catValu>
-    <labl>Almost every day</labl>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Inconsistent</labl>
   </catgry>
   <catgry>
     <catValu>97</catValu>
     <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HUSEDACHIEVER" dcml="0" files="ExtractData" intrvl="discrete" name="HUSEDACHIEVER">
+  <location EndPos="318" StartPos="318" width="1"/>
+  <labl>Husband's summary educational achievement</labl>
+  <txt><![CDATA[HUSEDACHIEVER (V729) is a summary variable that reports the highest level of education in broad categories for the woman's husband/partner. Countries vary in the gradations of their school systems, but HUSEDACHIEVER is a standardized variable providing the level of education in six categories: No education, Incomplete primary, Complete primary, Incomplete secondary, Complete secondary, and Higher. 
+
+HUSEDACHIEVER is constructed from information contained in the HUSEDLVL (V701) and HUSEDYR (V702) variables.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No education</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Incomplete primary</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Complete primary</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Incomplete secondary</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Complete secondary</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Higher</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GPSLAT" dcml="0" files="ExtractData" intrvl="contin" name="GPSLAT">
+  <location EndPos="328" StartPos="319" width="10"/>
+  <labl>Displaced GPS coordinates of primary sampling unit (Latitude)</labl>
+  <txt><![CDATA[GPSLAT represents the latitude coordinate for the displaced geographic center of the primary sampling unit, as provided by the DHS Program.  The coordinates provided by the DHS program are randomly displaced from their true locations, such that:
+urban clusters are displaced up to 2 kilometers in any direction.99% of rural clusters are displaced up to 5 kilometers in any direction.1% of rural clusters are displaced up to 10 kilometers in any direction.displaced coordinates do not cross the country boundary and stay within the DHS survey region.For more information, see the DHS GPS Data Collection page ().
+
+The projection of these coordinates is datum WGS84.]]></txt>
+  <codInstr><![CDATA[GPSLAT is a 10-digit numeric variable with up to 6 decimal places.  If the value of GPSLAT is zero, this represents missing data.]]></codInstr>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GPSLONG" dcml="0" files="ExtractData" intrvl="contin" name="GPSLONG">
+  <location EndPos="338" StartPos="329" width="10"/>
+  <labl>Displaced GPS coordinates of primary sampling unit (Longitude)</labl>
+  <txt><![CDATA[GPSLONG represents the longitude coordinate for the displaced geographic center of the primary sampling unit, as provided by the DHS Program.  The coordinates provided by the DHS program are randomly displaced from their true locations, such that:
+urban clusters are displaced up to 2 kilometers in any direction.99% of rural clusters are displaced up to 5 kilometers in any direction.1% of rural clusters are displaced up to 10 kilometers in any direction.displaced coordinates do not cross the country boundary and stay within the DHS survey region.For more information, see the DHS GPS Data Collection page ().
+
+The projection of these coordinates is datum WGS84.]]></txt>
+  <codInstr><![CDATA[GPSLONG is a 10-digit numeric variable with up to 6 decimal places.  If the value of GPSLONG is zero, this represents missing data.]]></codInstr>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GPSLATLONG" dcml="0" files="ExtractData" intrvl="contin" name="GPSLATLONG">
+  <location EndPos="348" StartPos="339" width="10"/>
+  <labl>Displaced GPS coordinates of primary sampling unit</labl>
+  <txt><![CDATA[GPSLATLONG represents the latitude and longitude coordinates for the displaced geographic center of the primary sampling unit (IDHSPSU), as provided by the DHS Program.  The coordinates (usually referred to as GPS clusters) are provided by the DHS program and are randomly displaced from their true locations. Displacement characters include:
+Urban clusters are displaced anywhere from 0 to 2 kilometers in any direction.99% of rural clusters are displaced anywhere from 0 to 5 kilometers in any direction.1% of rural clusters are displaced up to 10 kilometers in any direction.Clusters are not displaced across survey regions or national boundaries.Downloading this variable requires that you have received additional authorization from the DHS Program to access the GPS data associated with specific DHS samples. You will not be able to download an extract with the GPS variables if you have included a sample for which you do not have permission specifically for GPS data.  To request permission to download GPS data from IPUMS DHS, follow the instructions here to apply directly with the DHS Program. 
+
+When selecting this variable in your data cart, you will find the variables GPSLAT (latitude) and GPSLONG (longitude) in your data file.  You must use both variables to identify the correct location of the displaced geographic center of a primary sampling unit. 
+
+GPSLAT and GPSLONG are merged to the data using the variable DHSID. 
+
+For more information, see the DHS GPS Data Collection page.
+
+The projection of these coordinates is datum WGS84.]]></txt>
+  <codInstr><![CDATA[GPSLAT and GPSLONG are 10-digit numeric variables with up to 6 decimal places.  If the value of GPSLAT or GPSLONG is zero, this represents missing data.]]></codInstr>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SONSHOME_GH" dcml="0" files="ExtractData" intrvl="discrete" name="SONSHOME_GH">
+  <location EndPos="350" StartPos="349" width="2"/>
+  <labl>Number of own sons living in HH (IPUMS Global Health)</labl>
+  <txt><![CDATA[SONSHOME _GH reports the number of sons who are living in the same household as the respondent.
+This variable is consistently coded across the IPUMS Global Health projects from the project specific variables: 
+IPUMS DHS: SONSATHOMEIPUMS MICS: HOMESON IPUMS PMA: SONSATHOMEFound on the Women unit of analysis (IPUMS MICS and IPUMS DHS) and the Family Planning-Person unit of analysis (IPUMS PMA).]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>Women who never had a birth</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>Women who do not have a child living in HH</labl>
   </catgry>
   <catgry>
     <catValu>98</catValu>
@@ -6517,7 +8462,7 @@ IPUMS DHS: NEWSBRIGIPUMS MICS: NEWSFREQFound on the Women unit of analysis for b
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="DAUSHOME_GH" dcml="0" files="ExtractData" intrvl="discrete" name="DAUSHOME_GH">
-  <location EndPos="286" StartPos="285" width="2"/>
+  <location EndPos="352" StartPos="351" width="2"/>
   <labl>Number of own daughters living in HH (IPUMS Global Health)</labl>
   <txt><![CDATA[DAUSHOME _GH reports the number of daughters who are living in the same household as the respondent.
 This variable is consistently coded across the IPUMS Global Health projects from the project specific variables: 
@@ -6602,7 +8547,7 @@ IPUMS DHS: DAUSATHOMEIPUMS MICS: HOMEDAU IPUMS PMA: DAUSATHOMEFound on the Women
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SONSAWAY_GH" dcml="0" files="ExtractData" intrvl="discrete" name="SONSAWAY_GH">
-  <location EndPos="288" StartPos="287" width="2"/>
+  <location EndPos="354" StartPos="353" width="2"/>
   <labl>Number of own sons living elsewhere (IPUMS Global Health)</labl>
   <txt><![CDATA[SONSAWAY _GH reports the number of sons who are living away from the respondent.
 This variable is consistently coded across the IPUMS Global Health projects from the project specific variables: 
@@ -6687,7 +8632,7 @@ IPUMS DHS: SONSAWAYHOMEIPUMS MICS: AWAYSON IPUMS PMA: SONSAWAYFound on the Women
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="DAUSAWAY_GH" dcml="0" files="ExtractData" intrvl="discrete" name="DAUSAWAY_GH">
-  <location EndPos="290" StartPos="289" width="2"/>
+  <location EndPos="356" StartPos="355" width="2"/>
   <labl>Number of own daughters living elsewhere (IPUMS Global Health)</labl>
   <txt><![CDATA[DAUSAWAY _GH reports the number of daughters who are living away from the respondent.
 This variable is consistently coded across the IPUMS Global Health projects from the project specific variables: 
@@ -6768,7 +8713,7 @@ IPUMS DHS: DAUSAWAYHOMEIPUMS MICS: AWAYDAU IPUMS PMA: DAUSAWAYFound on the Women
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SONSDIED_GH" dcml="0" files="ExtractData" intrvl="discrete" name="SONSDIED_GH">
-  <location EndPos="292" StartPos="291" width="2"/>
+  <location EndPos="358" StartPos="357" width="2"/>
   <labl>Number of own sons who have died (IPUMS Global Health)</labl>
   <txt><![CDATA[SONSDIED _GH reports the number of the respondent's sons who have died.
 This variable is consistently coded across the IPUMS Global Health projects from the project specific variables: 
@@ -6849,7 +8794,7 @@ IPUMS DHS: SONSDIEDIPUMS MICS: DIEDSON IPUMS PMA: SONSDIEDFound on the Women uni
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="DAUSDIED_GH" dcml="0" files="ExtractData" intrvl="discrete" name="DAUSDIED_GH">
-  <location EndPos="294" StartPos="293" width="2"/>
+  <location EndPos="360" StartPos="359" width="2"/>
   <labl>Number of own daughters who have died (IPUMS Global Health)</labl>
   <txt><![CDATA[DAUSDIED _GH reports the number of the respondent's daughters who have died.
 This variable is consistently coded across the IPUMS Global Health projects from the project specific variables: 
