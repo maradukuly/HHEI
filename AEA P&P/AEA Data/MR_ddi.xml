@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
-<codeBook ID="ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00011.dat-www.idhsdata.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+<codeBook ID="ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00017.dat-www.idhsdata.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
   <docDscr>
     <citation>
       <titlStmt>
         <titl>Codebook for an IPUMS DHS Data Extract</titl>
-        <subTitl>DDI 2.5 metadata describing the extract file  'idhs_00011.dat'</subTitl>
-        <IDNo>ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00011.dat-www.idhsdata.org</IDNo>
+        <subTitl>DDI 2.5 metadata describing the extract file  'idhs_00017.dat'</subTitl>
+        <IDNo>ddi2-ead0c730-6b76-013e-0570-02420a1c0304-idhs_00017.dat-www.idhsdata.org</IDNo>
       </titlStmt>
       <rspStmt>
         <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
       </rspStmt>
       <prodStmt>
         <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
-        <prodDate date="2026-10-05">October 5, 2026</prodDate>
+        <prodDate date="2026-10-15">October 15, 2026</prodDate>
         <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
       </prodStmt>
       <distStmt>
@@ -24,14 +24,14 @@
   <stdyDscr>
     <citation>
       <titlStmt>
-        <titl>User Extract idhs_00011.dat</titl>
+        <titl>User Extract idhs_00017.dat</titl>
       </titlStmt>
       <rspStmt>
         <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
       </rspStmt>
       <prodStmt>
         <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
-        <prodDate date="2026-10-05">October 5, 2026</prodDate>
+        <prodDate date="2026-10-15">October 15, 2026</prodDate>
         <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
       </prodStmt>
       <distStmt>
@@ -42,7 +42,7 @@
         <serInfo>DOI:10.18128/D080.V12</serInfo>
       </serStmt>
       <verStmt>
-        <version date="2026-10-05"/>
+        <version date="2026-10-15"/>
       </verStmt>
     </citation>
     <stdyInfo>
@@ -54,24 +54,40 @@
         <topcClas vocab="IPUMS">Migration Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Integrated geography Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Single sample geography Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Ethnicity and religion Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Marriage and cohabitation Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Fertility Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Household demographic Variables -- PERSON</topcClas>
-        <topcClas vocab="IPUMS">Possessions Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Housing Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Work Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Wealth index Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">SES general Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Education, general Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Media exposure, general Variables -- PERSON</topcClas>
       </subject>
       <sumDscr ID="sdatref-940">
         <timePrd date="2007" event="single">2007</timePrd>
+        <nation abbr="lr">Liberia</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-941">
+        <timePrd date="2013" event="single">2013</timePrd>
         <nation abbr="lr">Liberia</nation>
       </sumDscr>
       <sumDscr ID="sdatref-1046">
         <timePrd date="2008" event="single">2008</timePrd>
         <nation abbr="sl">Sierra Leone</nation>
       </sumDscr>
+      <sumDscr ID="sdatref-1047">
+        <timePrd date="2013" event="single">2013</timePrd>
+        <nation abbr="sl">Sierra Leone</nation>
+      </sumDscr>
       <notes><![CDATA[Additional notes on a sample that is part of this study:  Liberia 2007 Men
 ]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Liberia 2013 Men
+]]></notes>
       <notes><![CDATA[Additional notes on a sample that is part of this study:  Sierra Leone 2008 Men
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Sierra Leone 2013 Men
 ]]></notes>
     </stdyInfo>
     <dataAccs>
@@ -87,11 +103,12 @@ The licensing agreement for use of IPUMS DHS data requires that users supply us 
         <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
       </useStmt>
     </dataAccs>
-    <notes><![CDATA[User-provided description:  Data extract for single survey data, immediately post-war in Liberia and Sierra Leone (Men)]]></notes>
+    <notes><![CDATA[User-provided description:  Revision of (Updated MR LBR and SLE Data)]]></notes>
+    <notes>This extract is a revision of the user's previous extract, ID 39087665.</notes>
   </stdyDscr>
   <fileDscr ID="ExtractData">
     <fileTxt>
-      <fileName>idhs_00011.dat</fileName>
+      <fileName>idhs_00017.dat</fileName>
       <fileCont>Microdata records</fileCont>
       <fileStrc type="rectangular"/>
       <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
@@ -4344,8 +4361,79 @@ Download an integrated GIS map (in shapefile format) for Liberia.]]></txt>
   <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="GEO_LR2013_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_LR2013_2019">
+  <location EndPos="165" StartPos="164" width="2"/>
+  <labl>Liberia counties, 2013-2019 [integrated; GIS]</labl>
+  <txt><![CDATA[GEO_LR2013_2019 reports the county of Liberia where the respondent was interviewed. DHS units in GEO_ LR2013_2019 are equivalent to counties.
+
+Other sample years have their own sample-specific geography variables for Liberia. There is also an integrated variable, GEO_LR2007_2019, that provides spatially consistent units over time at lesser geographic detail.
+
+Download an integrated GIS map (in shapefile format) for Liberia.]]></txt>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Bomi</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Bong</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Grand Bassa</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Grand Cape Mount</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Grand Gedeh</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>Grand Kru</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Lofa</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Margibi</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>Maryland</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Montserrado</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>Nimba</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>River Cess</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>Sinoe</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>River Gee</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>Gbarpolu</labl>
+  </catgry>
+  <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="GEO_SL2008_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_SL2008_2019">
-  <location EndPos="164" StartPos="164" width="1"/>
+  <location EndPos="166" StartPos="166" width="1"/>
   <labl>Sierra Leone regions, 2008-2019 [integrated; GIS]</labl>
   <txt><![CDATA[GEO_SL2008_2019 reports the region of Sierra Leone where the respondent was interviewed. The variable is integrated to yield units with consistent boundaries across samples for Sierra Leone.
 
@@ -4371,70 +4459,138 @@ Download an integrated GIS map (in shapefile format) for Sierra Leone.]]></txt>
   <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="GEO_LR2007" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_LR2007">
-  <location EndPos="165" StartPos="165" width="1"/>
-  <labl>Liberia regions, 2007 [GIS]</labl>
-  <txt><![CDATA[GEO_LR2007 (V101_LR2007) reports the region of Liberia where the respondent was interviewed. DHS regions in the 2007 Liberia survey are equivalent to groups of counties.
+<var ID="GEOALT_SL2013_2019" dcml="0" files="ExtractData" intrvl="discrete" name="GEOALT_SL2013_2019">
+  <location EndPos="168" StartPos="167" width="2"/>
+  <labl>Sierra Leone districts, 2013-2019 [integrated; GIS}</labl>
+  <txt><![CDATA[GEOALT_ SL2013_2019 reports the district of Sierra Leone where the respondent was interviewed. The variable is integrated to yield units with consistent boundaries across samples.
 
-Other sample years have their own sample-specific geography variables. There is also an integrated variable, GEO_LR2007_2019, that provides spatially consistent units over time. 
+Labels identify the modern geographic units (districts) contained in each integrated region. Each sample also has its own non-integrated geography variable. The 2008 survey does not include sufficient detail, and is not included in GEOALT_SL2013_2019. See GEO_SL2008_2019 for comparable geography across all Sierra Leone samples.
 
-A GIS map for GEO_LR2007 (in shapefile format) can be downloaded from the DHS Program Spatial Data Repository Boundaries page.]]></txt>
+Download an integrated GIS map (in shapefile format) for Sierra Leone.]]></txt>
   <catgry>
-    <catValu>1</catValu>
-    <labl>Monrovia</labl>
+    <catValu>11</catValu>
+    <labl>Kailahun</labl>
   </catgry>
   <catgry>
-    <catValu>2</catValu>
-    <labl>North Western</labl>
+    <catValu>12</catValu>
+    <labl>Kenema</labl>
   </catgry>
   <catgry>
-    <catValu>3</catValu>
-    <labl>South Central</labl>
+    <catValu>13</catValu>
+    <labl>Kono</labl>
   </catgry>
   <catgry>
-    <catValu>4</catValu>
-    <labl>South Eastern A</labl>
+    <catValu>21</catValu>
+    <labl>Bombali, Port Loko, Karene</labl>
   </catgry>
   <catgry>
-    <catValu>5</catValu>
-    <labl>South Eastern B</labl>
+    <catValu>23</catValu>
+    <labl>Koinadugu, Falaba</labl>
   </catgry>
   <catgry>
-    <catValu>6</catValu>
-    <labl>North Central</labl>
+    <catValu>24</catValu>
+    <labl>Tonkolili</labl>
   </catgry>
-  <concept vocab="IPUMS">Single sample geography Variables -- PERSON</concept>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Kambia</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Bo</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Bonthe</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>Moyamba</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>Pujehun</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Western Rural</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>Western Urban</labl>
+  </catgry>
+  <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="GEO_SL2008" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_SL2008">
-  <location EndPos="166" StartPos="166" width="1"/>
-  <labl>Sierra Leone regions, 2008 [GIS]</labl>
-  <txt><![CDATA[GEO_SL2008 (V101_SL2008) reports the region of Sierra Leone where the respondent was interviewed. DHS units in the 2008 Sierra Leone survey are equivalent to provinces.
+<var ID="GEOALT_SL2013" dcml="0" files="ExtractData" intrvl="discrete" name="GEOALT_SL2013">
+  <location EndPos="170" StartPos="169" width="2"/>
+  <labl>Sierra Leone districts, 2013 [GIS]</labl>
+  <txt><![CDATA[GEOALT_SL2013 indicates the district in Sierra Leone where the respondent was interviewed.  Districts are the second administrative level of geography.  
 
-Other sample years have their own sample-specific geography variables. The integrated variables GEO_SL2008_2019 and GEOALT_SL2013_2019 provide spatially consistent units for Sierra Leone over time. The Sierra Leone 2008 sample is excluded from GEOALT_SL2013_2019 due to lack of detail.
+Other sample years have their own sample-specific geography variables. There is also an integrated variable, GEO_SL2008_2019, that provides spatially consistent units over time with less geographic detail (provinces). The first administrative level of geography, states, can be found in GEO_SL2013.
 
-A GIS map for GEO_SL2008 (in shapefile format) can be downloaded from the DHS Program Spatial Data Repository Boundaries page.]]></txt>
+A GIS map for GEOALT_SL2013 (in shapefile format) can be downloaded from the DHS Program Spatial Data Repository Boundaries page.]]></txt>
   <catgry>
-    <catValu>1</catValu>
-    <labl>Eastern</labl>
+    <catValu>11</catValu>
+    <labl>Kailahun</labl>
   </catgry>
   <catgry>
-    <catValu>2</catValu>
-    <labl>Northern</labl>
+    <catValu>12</catValu>
+    <labl>Kenema</labl>
   </catgry>
   <catgry>
-    <catValu>3</catValu>
-    <labl>Southern</labl>
+    <catValu>13</catValu>
+    <labl>Kono</labl>
   </catgry>
   <catgry>
-    <catValu>4</catValu>
-    <labl>Western</labl>
+    <catValu>21</catValu>
+    <labl>Bombali</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Kambia</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Koinadugu</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Port Loko</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Tonkolili</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Bo</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Bonthe</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>Moyamba</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>Pujehun</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Western Rural</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>Western Urban</labl>
   </catgry>
   <concept vocab="IPUMS">Single sample geography Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="RESIDENTMN" dcml="0" files="ExtractData" intrvl="discrete" name="RESIDENTMN">
-  <location EndPos="167" StartPos="167" width="1"/>
+  <location EndPos="171" StartPos="171" width="1"/>
   <labl>Man is usual resident or visitor</labl>
   <txt><![CDATA[RESIDENTMN (MV135) indicates whether the man, in a men's sample, was a usual resident of the household or was just visiting there. As defined by the RESIDENTMN variable, a visitor could potentially reside in the city, town, or village where the interview took place but would have answered "No" to the question, "Does (NAME) usually live here [in this dwelling unit]?" on the household questionnaire.]]></txt>
   <catgry>
@@ -4453,7 +4609,7 @@ A GIS map for GEO_SL2008 (in shapefile format) can be downloaded from the DHS Pr
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AGEMN" dcml="0" files="ExtractData" intrvl="discrete" name="AGEMN">
-  <location EndPos="169" StartPos="168" width="2"/>
+  <location EndPos="173" StartPos="172" width="2"/>
   <labl>Man's age</labl>
   <txt><![CDATA[AGEMN (MV012) reports the man's age. DHS surveys collect information about the man's age through questions about age at last birthday and date of birth.  DHS Recode Manuals provide the following information about how the AGE variable is calculated:
 Current age in completed years is calculated from the century month code of the date of birth of the respondent (MV011) and the century month code of the date of interview (MV008). In a few cases the age in the data file will be different from that reported by the respondent when the respondent's birthday was in the month of interview, but he had not yet had his birthday. If the respondent correctly reported his age at his last birthday (and not his age at his next birthday) then the calculated age was rounded up from the reported age, to avoid inconsistencies between the age and the century month code for the birth.]]></txt>
@@ -4796,8 +4952,746 @@ Current age in completed years is calculated from the century month code of the 
   <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="AGE5YEARMN" dcml="0" files="ExtractData" intrvl="discrete" name="AGE5YEARMN">
+  <location EndPos="175" StartPos="174" width="2"/>
+  <labl>Man's age in 5-year groups</labl>
+  <txt><![CDATA[AGE5YEARMN (MV013) reports the man's age in 5-year age groups, based on data from the AGEMN (MV012) variable. The age range of men interviewed varies across samples. See Comparability.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>15-19</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>20-24</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>25-29</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>30-34</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>35-39</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>40-44</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>45-49</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>50-54</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>55-59</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>60+</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>60-64</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>65+</labl>
+  </catgry>
+  <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="RELIGIONMN" dcml="0" files="ExtractData" intrvl="discrete" name="RELIGIONMN">
+  <location EndPos="179" StartPos="176" width="4"/>
+  <labl>Man's religion</labl>
+  <txt><![CDATA[RELIGIONMN (MV130) reports the man's religion. While the categories and codes for the religion variable in the original DHS files are country-specific, IPUMS-DHS uses a 4-digit composite coding system to fit these diverse categories into a single variable without losing information. See Comparability.]]></txt>
+  <catgry>
+    <catValu>0000</catValu>
+    <labl>NO RELIGION</labl>
+  </catgry>
+  <catgry>
+    <catValu>1000</catValu>
+    <labl>MUSLIM</labl>
+  </catgry>
+  <catgry>
+    <catValu>2000</catValu>
+    <labl>CHRISTIAN</labl>
+  </catgry>
+  <catgry>
+    <catValu>2100</catValu>
+    <labl>Catholic</labl>
+  </catgry>
+  <catgry>
+    <catValu>2200</catValu>
+    <labl>Orthodox</labl>
+  </catgry>
+  <catgry>
+    <catValu>2300</catValu>
+    <labl>Protestant</labl>
+  </catgry>
+  <catgry>
+    <catValu>2310</catValu>
+    <labl>Lutheran</labl>
+  </catgry>
+  <catgry>
+    <catValu>2320</catValu>
+    <labl>Anglican</labl>
+  </catgry>
+  <catgry>
+    <catValu>2330</catValu>
+    <labl>Presbyterian</labl>
+  </catgry>
+  <catgry>
+    <catValu>2331</catValu>
+    <labl>Evangelical Presbyterian</labl>
+  </catgry>
+  <catgry>
+    <catValu>2340</catValu>
+    <labl>Baptist/Seventh-day Adventist</labl>
+  </catgry>
+  <catgry>
+    <catValu>2341</catValu>
+    <labl>Baptist</labl>
+  </catgry>
+  <catgry>
+    <catValu>2342</catValu>
+    <labl>Seventh-day Adventist</labl>
+  </catgry>
+  <catgry>
+    <catValu>2350</catValu>
+    <labl>Apostolic</labl>
+  </catgry>
+  <catgry>
+    <catValu>2351</catValu>
+    <labl>New Apostolic</labl>
+  </catgry>
+  <catgry>
+    <catValu>2360</catValu>
+    <labl>Salvation Army</labl>
+  </catgry>
+  <catgry>
+    <catValu>2370</catValu>
+    <labl>Methodist</labl>
+  </catgry>
+  <catgry>
+    <catValu>2380</catValu>
+    <labl>Pentacostal-based</labl>
+  </catgry>
+  <catgry>
+    <catValu>2381</catValu>
+    <labl>Pentacostal</labl>
+  </catgry>
+  <catgry>
+    <catValu>2382</catValu>
+    <labl>Celestial Church of Christ</labl>
+  </catgry>
+  <catgry>
+    <catValu>2383</catValu>
+    <labl>Universal</labl>
+  </catgry>
+  <catgry>
+    <catValu>2384</catValu>
+    <labl>Assemblies of God</labl>
+  </catgry>
+  <catgry>
+    <catValu>2385</catValu>
+    <labl>Charismatic</labl>
+  </catgry>
+  <catgry>
+    <catValu>2386</catValu>
+    <labl>Christian Revival Church</labl>
+  </catgry>
+  <catgry>
+    <catValu>2390</catValu>
+    <labl>Other Protestant</labl>
+  </catgry>
+  <catgry>
+    <catValu>2391</catValu>
+    <labl>Evangelical</labl>
+  </catgry>
+  <catgry>
+    <catValu>2392</catValu>
+    <labl>Lesotho Evangelical Church</labl>
+  </catgry>
+  <catgry>
+    <catValu>2393</catValu>
+    <labl>Kimbanguist (Congo, Democratic Republic and Republic)</labl>
+  </catgry>
+  <catgry>
+    <catValu>2394</catValu>
+    <labl>Christian Zionist</labl>
+  </catgry>
+  <catgry>
+    <catValu>2400</catValu>
+    <labl>Nontrinitarian</labl>
+  </catgry>
+  <catgry>
+    <catValu>2410</catValu>
+    <labl>Jehovah's Witness</labl>
+  </catgry>
+  <catgry>
+    <catValu>2411</catValu>
+    <labl>Adventist/Jehovah's Witness</labl>
+  </catgry>
+  <catgry>
+    <catValu>2900</catValu>
+    <labl>Other Christian, country-specific</labl>
+  </catgry>
+  <catgry>
+    <catValu>2901</catValu>
+    <labl>Mammon (Uganda)</labl>
+  </catgry>
+  <catgry>
+    <catValu>2902</catValu>
+    <labl>Mana</labl>
+  </catgry>
+  <catgry>
+    <catValu>3000</catValu>
+    <labl>BUDDHIST/NEO-BUDDHIST</labl>
+  </catgry>
+  <catgry>
+    <catValu>3100</catValu>
+    <labl>Buddhist</labl>
+  </catgry>
+  <catgry>
+    <catValu>4000</catValu>
+    <labl>HINDU</labl>
+  </catgry>
+  <catgry>
+    <catValu>5000</catValu>
+    <labl>JEWISH</labl>
+  </catgry>
+  <catgry>
+    <catValu>6000</catValu>
+    <labl>TRADITIONAL/SPIRITUAL/ANIMIST</labl>
+  </catgry>
+  <catgry>
+    <catValu>6100</catValu>
+    <labl>Traditional</labl>
+  </catgry>
+  <catgry>
+    <catValu>6200</catValu>
+    <labl>Spiritual</labl>
+  </catgry>
+  <catgry>
+    <catValu>6300</catValu>
+    <labl>Animist</labl>
+  </catgry>
+  <catgry>
+    <catValu>6400</catValu>
+    <labl>Specified Traditional</labl>
+  </catgry>
+  <catgry>
+    <catValu>6401</catValu>
+    <labl>Donyi-Polo</labl>
+  </catgry>
+  <catgry>
+    <catValu>6402</catValu>
+    <labl>Sanamahi</labl>
+  </catgry>
+  <catgry>
+    <catValu>6403</catValu>
+    <labl>Vodun</labl>
+  </catgry>
+  <catgry>
+    <catValu>7000</catValu>
+    <labl>OTHER (SPECIFIED)</labl>
+  </catgry>
+  <catgry>
+    <catValu>7100</catValu>
+    <labl>Bahá'í</labl>
+  </catgry>
+  <catgry>
+    <catValu>7200</catValu>
+    <labl>Sikh</labl>
+  </catgry>
+  <catgry>
+    <catValu>7300</catValu>
+    <labl>Zoroastrian</labl>
+  </catgry>
+  <catgry>
+    <catValu>7400</catValu>
+    <labl>Jain</labl>
+  </catgry>
+  <catgry>
+    <catValu>7900</catValu>
+    <labl>Country-specific other</labl>
+  </catgry>
+  <catgry>
+    <catValu>7901</catValu>
+    <labl>Sect (Burundi)</labl>
+  </catgry>
+  <catgry>
+    <catValu>7902</catValu>
+    <labl>Bundu dia Kongo (Congo, Democratic Republic)</labl>
+  </catgry>
+  <catgry>
+    <catValu>7903</catValu>
+    <labl>Vuvamu (Congo, Democratic Republic)</labl>
+  </catgry>
+  <catgry>
+    <catValu>7904</catValu>
+    <labl>Kirat Mundhum (Nepal)</labl>
+  </catgry>
+  <catgry>
+    <catValu>7905</catValu>
+    <labl>Zephirin/Matsouaniste/Ngunza (Congo, Republic)</labl>
+  </catgry>
+  <catgry>
+    <catValu>9000</catValu>
+    <labl>OTHER</labl>
+  </catgry>
+  <catgry>
+    <catValu>9001</catValu>
+    <labl>Religion 1</labl>
+  </catgry>
+  <catgry>
+    <catValu>9002</catValu>
+    <labl>Religion 2</labl>
+  </catgry>
+  <catgry>
+    <catValu>9003</catValu>
+    <labl>Religion 3</labl>
+  </catgry>
+  <catgry>
+    <catValu>9004</catValu>
+    <labl>Religion 4</labl>
+  </catgry>
+  <catgry>
+    <catValu>9998</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Ethnicity and religion Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ETHNICITYMN_LR" dcml="0" files="ExtractData" intrvl="discrete" name="ETHNICITYMN_LR">
+  <location EndPos="181" StartPos="180" width="2"/>
+  <labl>Man's ethnicity, Liberia</labl>
+  <txt><![CDATA[ETHNICITYMN_LR (MV131LR) is a variable specific to Liberia that reports responses to a question about the man's ethnicity.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Bassa</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Gbandi</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Belle</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Dey</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Gio</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Gola</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>Grebo</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Kissi</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Kpelle</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Krahn</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Kru</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Lorma</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Mandingo</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Mano</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Mende</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Sarpo</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Vai</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>None/English only</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Ethnicity and religion Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ETHNICITYMN_SL" dcml="0" files="ExtractData" intrvl="discrete" name="ETHNICITYMN_SL">
+  <location EndPos="183" StartPos="182" width="2"/>
+  <labl>Man's ethnicity, Sierra Leone</labl>
+  <txt><![CDATA[ETHNICITYMN_SL (MV131SL) reports the male respondent's ethnic group, using categories country-specific to Sierra Leone.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Creole</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Kono</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Limba</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Loko</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Mandingo</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Mende</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>Sherbro</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Temne</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Koranko</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Fullah</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>Other Sierra Leone, unspecified</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Foreign</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Ethnicity and religion Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MARSTATMN" dcml="0" files="ExtractData" intrvl="discrete" name="MARSTATMN">
+  <location EndPos="185" StartPos="184" width="2"/>
+  <labl>Man's current marital or union status</labl>
+  <txt><![CDATA[MARSTATMN (MV501) reports the man's current marital status. Response categories and question wording vary across surveys.  See Comparability.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>Never married</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Married or living together</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Married</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Living together</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Formerly in union</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Widowed</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Divorced</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Separated/not living together</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Marriage and cohabitation Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CHEBMN" dcml="0" files="ExtractData" intrvl="discrete" name="CHEBMN">
+  <location EndPos="187" StartPos="186" width="2"/>
+  <labl>Total children ever biologically fathered by male respondent</labl>
+  <txt><![CDATA[CHEBMN (MV201) reports the total number of children biologically fathered by the male respondent. The standard question wording asked about "all of the children that are biologically yours, even if they are not legally yours or do not have your last name."
+
+The number reported in CHEBMN is the sum of a series of variables covering the total number of biological sons and daughters who are living with their father, living elsewhere, or who have died (MV202 to MV207).
+
+While the related variable CHEB (V201) for women respondents is top-coded at 20 births, CHEBMN is not so limited, since the man's offspring could have been borne by more than one woman.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Fertility Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="SONSDIEDMN" dcml="0" files="ExtractData" intrvl="discrete" name="SONSDIEDMN">
-  <location EndPos="171" StartPos="170" width="2"/>
+  <location EndPos="189" StartPos="188" width="2"/>
   <labl>Number of biological sons of the male respondent who have died</labl>
   <txt><![CDATA[SONSDIEDMN (MV206) reports how many of the biological sons of the male respondent have died.]]></txt>
   <catgry>
@@ -4884,7 +5778,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="DAUSDIEDMN" dcml="0" files="ExtractData" intrvl="discrete" name="DAUSDIEDMN">
-  <location EndPos="173" StartPos="172" width="2"/>
+  <location EndPos="191" StartPos="190" width="2"/>
   <labl>Number of biological daughters of the male respondent who have died</labl>
   <txt><![CDATA[DAUSDIEDMN (MV207) reports how many of the biological daughters of the male respondent have died.]]></txt>
   <catgry>
@@ -4979,7 +5873,7 @@ Current age in completed years is calculated from the century month code of the 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="HHEADAGEHH" dcml="0" files="ExtractData" intrvl="discrete" name="HHEADAGEHH">
-  <location EndPos="175" StartPos="174" width="2"/>
+  <location EndPos="193" StartPos="192" width="2"/>
   <labl>Age of household head (from HH record)</labl>
   <txt><![CDATA[HHEADAGEHH (HV220) reports the age of the head of the household.
 
@@ -5384,7 +6278,7 @@ The information in HHEADAGEHH is taken from the household record and applies to 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="HHEADSEXHH" dcml="0" files="ExtractData" intrvl="discrete" name="HHEADSEXHH">
-  <location EndPos="176" StartPos="176" width="1"/>
+  <location EndPos="194" StartPos="194" width="1"/>
   <labl>Sex of household head (from hh record)</labl>
   <txt><![CDATA[HHEADSEXHH (HV219) reports the sex of the head of the household.
 
@@ -5416,27 +6310,39 @@ The information in HHEADSEXHH is taken from the household record and applies to 
   <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="BANKACC" dcml="0" files="ExtractData" intrvl="discrete" name="BANKACC">
-  <location EndPos="177" StartPos="177" width="1"/>
-  <labl>HH has bank account</labl>
-  <txt><![CDATA[BANKACC (HV247) indicates whether any member of the household has a bank account.
+<var ID="FAMSTRUCTR" dcml="0" files="ExtractData" intrvl="discrete" name="FAMSTRUCTR">
+  <location EndPos="195" StartPos="195" width="1"/>
+  <labl>Relationship structure in HH</labl>
+  <txt><![CDATA[FAMSTRUCTR (HV217) indicates the relationship structure (no adults, one adult, two related adults of the opposite sex, two related adults of the same sex, three or more related adults, or unrelated adults) in the household. Only usual (de jure) household members aged 15 and over are considered in determining the household's relationship structure. FAMSTRUCTR is a constructed variable, based on information about each household member's age, sex, and relationship to the householder, which was collected when completing the listing of persons in the household at the time of the survey.
 
-The information in BANKACC is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+The information in FAMSTRUCTR is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
   <catgry>
     <catValu>0</catValu>
-    <labl>No</labl>
+    <labl>No adults</labl>
   </catgry>
   <catgry>
     <catValu>1</catValu>
-    <labl>Yes</labl>
+    <labl>One adult</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Two adults, opp sex</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Two adults, same sex</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Three plus related adults</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Unrelated adults</labl>
   </catgry>
   <catgry>
     <catValu>6</catValu>
     <labl>Non-resident</labl>
-  </catgry>
-  <catgry>
-    <catValu>7</catValu>
-    <labl>Don't know</labl>
   </catgry>
   <catgry>
     <catValu>8</catValu>
@@ -5446,11 +6352,202 @@ The information in BANKACC is taken from the household record and applies to reg
     <catValu>9</catValu>
     <labl>NIU (not in universe)</labl>
   </catgry>
-  <concept vocab="IPUMS">Possessions Variables -- PERSON</concept>
+  <concept vocab="IPUMS">Household demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SLEEPROOMS" dcml="0" files="ExtractData" intrvl="discrete" name="SLEEPROOMS">
+  <location EndPos="197" StartPos="196" width="2"/>
+  <labl>Number of rooms in HH used for sleeping</labl>
+  <txt><![CDATA[SLEEPROOMS (HV216) reports the number of rooms in the household used for sleeping.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35+</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROOMPPHH" dcml="0" files="ExtractData" intrvl="contin" name="ROOMPPHH">
+  <location EndPos="201" StartPos="198" width="4"/>
+  <labl>Sleeping rooms per household member</labl>
+  <txt><![CDATA[ROOMPPHH reports the number of sleeping rooms per household member based on the variables SLEEPROOMS and HHMEMBERS.  This variable has been calculated by IPUMS using Chapter 2 of the DHS Guide to Statistics 8.]]></txt>
+  <codInstr><![CDATA[This is a numeric variable with up to two decimal places representing an average number of sleeping rooms per household member.]]></codInstr>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROOMPPPSU" dcml="0" files="ExtractData" intrvl="contin" name="ROOMPPPSU">
+  <location EndPos="205" StartPos="202" width="4"/>
+  <labl>Sleeping rooms per household member (average among households in PSU)</labl>
+  <txt><![CDATA[ROOMPPPSU reports the average number of sleeping rooms per household member, in the primary sampling unit, based on the variables SLEEPROOMS and HHMEMBERS.  This variable has been calculated by IPUMS using Chapter 2 of the DHS Guide to Statistics 8 and weighted using the variable HHWEIGHT.]]></txt>
+  <codInstr><![CDATA[This is a numeric variable that represents an average number of sleeping rooms per household member with up to two decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROOMPPSAMPLE" dcml="0" files="ExtractData" intrvl="contin" name="ROOMPPSAMPLE">
+  <location EndPos="209" StartPos="206" width="4"/>
+  <labl>Sleeping rooms per household member (average among households in sample)</labl>
+  <txt><![CDATA[ROOMPPSAMPLE reports the average number of sleeping rooms per household member, in the DHS survey sample, based on the variables SLEEPROOMS and HHMEMBERS.  This variable has been calculated by IPUMS using Chapter 2 of the DHS Guide to Statistics 8 and weighted using the variable HHWEIGHT.]]></txt>
+  <codInstr><![CDATA[This is a numeric variable that represents an average number of sleeping rooms per household member with up to two decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Housing Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CURRWORKMN" dcml="0" files="ExtractData" intrvl="discrete" name="CURRWORKMN">
-  <location EndPos="178" StartPos="178" width="1"/>
+  <location EndPos="210" StartPos="210" width="1"/>
   <labl>Man is currently working</labl>
   <txt><![CDATA[CURRWORKMN (MV714) indicates whether the man is currently working at a job or business.]]></txt>
   <catgry>
@@ -5469,7 +6566,7 @@ The information in BANKACC is taken from the household record and applies to reg
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="JOBABSENTMN" dcml="0" files="ExtractData" intrvl="discrete" name="JOBABSENTMN">
-  <location EndPos="179" StartPos="179" width="1"/>
+  <location EndPos="211" StartPos="211" width="1"/>
   <labl>Man has job from which he was absent in past week</labl>
   <txt><![CDATA[For men who did not work in the past 7 days, JOBABSENTMN (MV714A) indicates whether the man had a job or business from which he was temporarily absent, due to leave, illness, vacation, or other reasons.]]></txt>
   <catgry>
@@ -5492,7 +6589,7 @@ The information in BANKACC is taken from the household record and applies to reg
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKWORKLASTYRMN" dcml="0" files="ExtractData" intrvl="discrete" name="WKWORKLASTYRMN">
-  <location EndPos="181" StartPos="180" width="2"/>
+  <location EndPos="213" StartPos="212" width="2"/>
   <labl>Man worked recently</labl>
   <txt><![CDATA[WKWORKLASTYRMN (MV731) indicates whether the male respondent worked recently (i.e., was currently working, was on leave from a job in the past 7 days, or worked in the past year).]]></txt>
   <catgry>
@@ -5523,7 +6620,7 @@ The information in BANKACC is taken from the household record and applies to reg
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKEMPLOYWHENMN" dcml="0" files="ExtractData" intrvl="discrete" name="WKEMPLOYWHENMN">
-  <location EndPos="182" StartPos="182" width="1"/>
+  <location EndPos="214" StartPos="214" width="1"/>
   <labl>Man works all year, seasonally, or occasionally</labl>
   <txt><![CDATA[WKEMPLOYWHENMN (MV732) indicates whether the man works throughout the year, seasonally, or occasionally.]]></txt>
   <catgry>
@@ -5554,7 +6651,7 @@ The information in BANKACC is taken from the household record and applies to reg
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WHOWORKFORMN" dcml="0" files="ExtractData" intrvl="discrete" name="WHOWORKFORMN">
-  <location EndPos="184" StartPos="183" width="2"/>
+  <location EndPos="216" StartPos="215" width="2"/>
   <labl>Man works for family, others, or self</labl>
   <txt><![CDATA[WHOWORKFORMN (MV719) indicates whether the man works for a family member, for someone else, or is self-employed.]]></txt>
   <catgry>
@@ -5601,7 +6698,7 @@ The information in BANKACC is taken from the household record and applies to reg
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKCURRJOBMN" dcml="0" files="ExtractData" intrvl="discrete" name="WKCURRJOBMN">
-  <location EndPos="186" StartPos="185" width="2"/>
+  <location EndPos="218" StartPos="217" width="2"/>
   <labl>Man's occupation</labl>
   <txt><![CDATA[WKCURRJOBMN (MV717) reports the occupation of the male respondent in somewhat standardized categories. The categories included, and the degree of detail within broad categories (e.g., self-employed versus employee in agriculture, or simply agriculture), vary across samples. IPUMS-DHS employs composite coding to maximize comparability across samples (using the first digit of the codes to indicate broad job categories) without loss of detailed information (preserved in the second digit).
 
@@ -5685,102 +6782,8 @@ The category "agriculture" includes fishermen, foresters, breeders, and hunters 
   <concept vocab="IPUMS">Work Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="WKTYPELANDMN" dcml="0" files="ExtractData" intrvl="discrete" name="WKTYPELANDMN">
-  <location EndPos="188" StartPos="187" width="2"/>
-  <labl>Type of land where man works</labl>
-  <txt><![CDATA[WKTYPELANDMN (MV740) reports the type of land where the respondent has done agricultural work (currently or in the last 12 months).]]></txt>
-  <catgry>
-    <catValu>00</catValu>
-    <labl>Does not use land</labl>
-  </catgry>
-  <catgry>
-    <catValu>10</catValu>
-    <labl>Own/family land</labl>
-  </catgry>
-  <catgry>
-    <catValu>11</catValu>
-    <labl>Own land</labl>
-  </catgry>
-  <catgry>
-    <catValu>12</catValu>
-    <labl>Family land</labl>
-  </catgry>
-  <catgry>
-    <catValu>20</catValu>
-    <labl>Someone else's land</labl>
-  </catgry>
-  <catgry>
-    <catValu>30</catValu>
-    <labl>Rented land</labl>
-  </catgry>
-  <catgry>
-    <catValu>40</catValu>
-    <labl>Other responses</labl>
-  </catgry>
-  <catgry>
-    <catValu>41</catValu>
-    <labl>Half-and-half</labl>
-  </catgry>
-  <catgry>
-    <catValu>42</catValu>
-    <labl>Communal land</labl>
-  </catgry>
-  <catgry>
-    <catValu>43</catValu>
-    <labl>Marine</labl>
-  </catgry>
-  <catgry>
-    <catValu>95</catValu>
-    <labl>Other</labl>
-  </catgry>
-  <catgry>
-    <catValu>97</catValu>
-    <labl>Don't know</labl>
-  </catgry>
-  <catgry>
-    <catValu>98</catValu>
-    <labl>Missing</labl>
-  </catgry>
-  <catgry>
-    <catValu>99</catValu>
-    <labl>NIU (not in universe)</labl>
-  </catgry>
-  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
-  <varFormat schema="other" type="numeric"/>
-</var>
-<var ID="WKEARNTYPEMN" dcml="0" files="ExtractData" intrvl="discrete" name="WKEARNTYPEMN">
-  <location EndPos="189" StartPos="189" width="1"/>
-  <labl>Type of earnings from man's work</labl>
-  <txt><![CDATA[WKEARNTYPEMN (MV741) reports the type of earnings for the respondent's work.]]></txt>
-  <catgry>
-    <catValu>0</catValu>
-    <labl>Not paid</labl>
-  </catgry>
-  <catgry>
-    <catValu>1</catValu>
-    <labl>Paid in cash only</labl>
-  </catgry>
-  <catgry>
-    <catValu>2</catValu>
-    <labl>Paid in cash and in kind</labl>
-  </catgry>
-  <catgry>
-    <catValu>3</catValu>
-    <labl>Paid in kind only</labl>
-  </catgry>
-  <catgry>
-    <catValu>8</catValu>
-    <labl>Missing</labl>
-  </catgry>
-  <catgry>
-    <catValu>9</catValu>
-    <labl>NIU (not in universe)</labl>
-  </catgry>
-  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
-  <varFormat schema="other" type="numeric"/>
-</var>
 <var ID="WEALTHQMN" dcml="0" files="ExtractData" intrvl="discrete" name="WEALTHQMN">
-  <location EndPos="190" StartPos="190" width="1"/>
+  <location EndPos="219" StartPos="219" width="1"/>
   <labl>Household wealth index in quintiles (from men's file)</labl>
   <txt><![CDATA[WEALTHQMN (MV190) refers to the relative wealth of the household where the male respondent lives, divided into quintiles from the poorest (code 1) to the richest (code 5). The wealth index is defined in the DHS Recode Manuals as follows:
 The wealth index is a composite measure of a household's cumulative living standard. The wealth index is calculated using easy-to-use data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities.Generated with a statistical procedure known as principal components analysis, the wealth index places individual households on a continuous scale of relative wealth. DHS separates all interviewed households into five quintiles of wealth.For additional information about the calculation and meaning of the wealth index, users should consult the summary information about the wealth index on The DHS Program website here and/or the DHS Comparative Report on "The DHS Wealth Index" here.
@@ -5816,7 +6819,7 @@ The variables used to calculate wealth index quintiles and the level of wealth i
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WEALTHSMN" dcml="5" files="ExtractData" intrvl="contin" name="WEALTHSMN">
-  <location EndPos="202" StartPos="191" width="12"/>
+  <location EndPos="231" StartPos="220" width="12"/>
   <labl>Wealth index factor score (5 decimals) (from men's file)</labl>
   <txt><![CDATA[WEALTHSMN (MV191) refers to the householdâs wealth index value generated by the product of standardized scores (z-scores) and factor coefficient scores (factor loadings) of wealth indicators. Most researchers will want to use instead the complementary variable WEALTHQMN (MV190), which reports quintile ranking (from poorest to richest) of the man's household, in terms of wealth score, for a given sample. 
 
@@ -5827,8 +6830,62 @@ The variables used to calculate wealth index scores are sample-specific. See Com
   <concept vocab="IPUMS">Wealth index Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
+<var ID="MANOWNHOUSE" dcml="0" files="ExtractData" intrvl="discrete" name="MANOWNHOUSE">
+  <location EndPos="232" StartPos="232" width="1"/>
+  <labl>Man owns a house alone or jointly</labl>
+  <txt><![CDATA[MANOWNHOUSE (MV745A) indicates whether the male respondent owns a house alone or jointly with someone else.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>Does not own</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Alone only</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Jointly only</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Both alone and jointly</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">SES general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MANOWNLAND" dcml="0" files="ExtractData" intrvl="discrete" name="MANOWNLAND">
+  <location EndPos="233" StartPos="233" width="1"/>
+  <labl>Man owns land alone or jointly</labl>
+  <txt><![CDATA[MANOWNLAND (MV745B) indicates whether the male respondent owns land alone or jointly with someone else.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>Does not own</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Alone only</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Jointly only</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Both alone and jointly</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">SES general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
 <var ID="EDUCLVLMN" dcml="0" files="ExtractData" intrvl="discrete" name="EDUCLVLMN">
-  <location EndPos="203" StartPos="203" width="1"/>
+  <location EndPos="234" StartPos="234" width="1"/>
   <labl>Man's highest educational level</labl>
   <txt><![CDATA[EDUCLVLMN (MV106) reports the highest level of school the male respondent attended. Countries vary in the gradations of their school systems, but EDUCLVLMN is a standardized variable reporting level of education in four broad categories:
 
@@ -5868,7 +6925,7 @@ The DHS recode manuals state, "In some countries the educational system does not
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="YRSCHLMN" dcml="0" files="ExtractData" intrvl="discrete" name="YRSCHLMN">
-  <location EndPos="205" StartPos="204" width="2"/>
+  <location EndPos="236" StartPos="235" width="2"/>
   <labl>Man's highest year of education in level</labl>
   <txt><![CDATA[For men who ever attended school, YRSCHLMN (MV107) reports the number of years of education completed at the highest level of schooling achieved (primary, secondary, or higher), as reported in EDUCLVLMN (MV106). See Comparability.
 
@@ -5957,7 +7014,7 @@ For the man's total years of education, see EDYRTOTALMN (MV133).]]></txt>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="EDYRTOTALMN" dcml="0" files="ExtractData" intrvl="discrete" name="EDYRTOTALMN">
-  <location EndPos="207" StartPos="206" width="2"/>
+  <location EndPos="238" StartPos="237" width="2"/>
   <labl>Man's total years of education</labl>
   <txt><![CDATA[EDYRTOTALMN (MV133) reports the man's education level in single years. This variable is constructed from responses to EDUCLVLMN (MV106) and YRSCHLMN (MV107) as follows:
 If EDUCLVLMN = "No education," EDYRTOTALMN = "0"If EDUCLVLMN = "Primary," EDYRTOTALMN = YRSCHLMNIf EDUCLVLMN = "Secondary," EDYRTOTALMN = YRSCHLMN + xIf EDUCLVLMN = "Higher," EDYRTOTALMN = YRSCHLMN + yIf EDUCLVLMN = "Missing," EDYRTOTALMN = "Missing"In the above equations, "x" equals the number of years needed to complete primary education, and "y" equals the number of years needed to complete primary and secondary education. The values of "x" and "y" are country-specific.]]></txt>
@@ -6085,7 +7142,7 @@ If EDUCLVLMN = "No education," EDYRTOTALMN = "0"If EDUCLVLMN = "Primary," EDYRTO
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="EDACHIEVERMN" dcml="0" files="ExtractData" intrvl="discrete" name="EDACHIEVERMN">
-  <location EndPos="208" StartPos="208" width="1"/>
+  <location EndPos="239" StartPos="239" width="1"/>
   <labl>Man's summary educational achievement</labl>
   <txt><![CDATA[EDACHIEVERMN (MV149) is a summary variable that reports the man's highest level of education in broad categories. Countries vary in the gradations of their school systems, but EDACHIEVERMN is a standardized variable providing the level of education in six categories:
 
@@ -6137,7 +7194,7 @@ EDACHIEVERMN is constructed from information contained in EDUCLVLMN (MV106) and 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="LIT2MN" dcml="0" files="ExtractData" intrvl="discrete" name="LIT2MN">
-  <location EndPos="210" StartPos="209" width="2"/>
+  <location EndPos="241" StartPos="240" width="2"/>
   <labl>Man's literacy, based on reading passage</labl>
   <txt><![CDATA[LIT2MN (MV155) indicates whether the man could read.
 
@@ -6182,7 +7239,7 @@ Persons with less than secondary school education were asked to demonstrate thei
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="LITBRIGMN" dcml="0" files="ExtractData" intrvl="discrete" name="LITBRIGMN">
-  <location EndPos="212" StartPos="211" width="2"/>
+  <location EndPos="243" StartPos="242" width="2"/>
   <labl>Man's literacy: Bridging variable</labl>
   <txt><![CDATA[LITBRIGMN serves as a bridging variable between two approaches to collecting information from men on their literacy.  Initially, male respondents were asked, "Can you read a letter or newspaper easily, with difficulty, or not at all?"  In many countries, persons with secondary or higher levels of schooling were presumed to "read easily," but coding criteria varied across countries. 
 
@@ -6231,7 +7288,7 @@ See Comparability for more information.]]></txt>
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="LITPROGRAMEVMN" dcml="0" files="ExtractData" intrvl="discrete" name="LITPROGRAMEVMN">
-  <location EndPos="213" StartPos="213" width="1"/>
+  <location EndPos="244" StartPos="244" width="1"/>
   <labl>Man ever participated in literacy program</labl>
   <txt><![CDATA[LITPROGRAMEVMN (MV156) indicates whether the respondent ever participated in a literacy program or any other program that involves learning to read and write (not including primary school).]]></txt>
   <catgry>
@@ -6251,6 +7308,86 @@ See Comparability for more information.]]></txt>
     <labl>NIU (not in universe)</labl>
   </catgry>
   <concept vocab="IPUMS">Education, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="NEWSBRIGMN" dcml="0" files="ExtractData" intrvl="discrete" name="NEWSBRIGMN">
+  <location EndPos="246" StartPos="245" width="2"/>
+  <labl>Man reads newspaper: Bridging variable</labl>
+  <txt><![CDATA[NEWSBRIGMN serves as a bridging variable between two approaches to collecting information on exposure to newspapers and magazines.  For Phases I through III of the DHS, male respondents were asked whether they read a newspaper or magazine at least once a week (NEWSWKMN (MV109)).  Beginning in Phase IV, respondents were asked how often they read newspapers or magazines (NEWSFQMN (MV157)). 
+
+NEWSBRIGMN uses composite coding to combine data from these two approaches. See Comparability for more information.]]></txt>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Not at all</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Less than once a week</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>At least once a week</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Almost every day</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Media exposure, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GPSLAT" dcml="0" files="ExtractData" intrvl="contin" name="GPSLAT">
+  <location EndPos="256" StartPos="247" width="10"/>
+  <labl>Displaced GPS coordinates of primary sampling unit (Latitude)</labl>
+  <txt><![CDATA[GPSLAT represents the latitude coordinate for the displaced geographic center of the primary sampling unit, as provided by the DHS Program.  The coordinates provided by the DHS program are randomly displaced from their true locations, such that:
+urban clusters are displaced up to 2 kilometers in any direction.99% of rural clusters are displaced up to 5 kilometers in any direction.1% of rural clusters are displaced up to 10 kilometers in any direction.displaced coordinates do not cross the country boundary and stay within the DHS survey region.For more information, see the DHS GPS Data Collection page ().
+
+The projection of these coordinates is datum WGS84.]]></txt>
+  <codInstr><![CDATA[GPSLAT is a 10-digit numeric variable with up to 6 decimal places.  If the value of GPSLAT is zero, this represents missing data.]]></codInstr>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GPSLONG" dcml="0" files="ExtractData" intrvl="contin" name="GPSLONG">
+  <location EndPos="266" StartPos="257" width="10"/>
+  <labl>Displaced GPS coordinates of primary sampling unit (Longitude)</labl>
+  <txt><![CDATA[GPSLONG represents the longitude coordinate for the displaced geographic center of the primary sampling unit, as provided by the DHS Program.  The coordinates provided by the DHS program are randomly displaced from their true locations, such that:
+urban clusters are displaced up to 2 kilometers in any direction.99% of rural clusters are displaced up to 5 kilometers in any direction.1% of rural clusters are displaced up to 10 kilometers in any direction.displaced coordinates do not cross the country boundary and stay within the DHS survey region.For more information, see the DHS GPS Data Collection page ().
+
+The projection of these coordinates is datum WGS84.]]></txt>
+  <codInstr><![CDATA[GPSLONG is a 10-digit numeric variable with up to 6 decimal places.  If the value of GPSLONG is zero, this represents missing data.]]></codInstr>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GPSLATLONG" dcml="0" files="ExtractData" intrvl="contin" name="GPSLATLONG">
+  <location EndPos="276" StartPos="267" width="10"/>
+  <labl>Displaced GPS coordinates of primary sampling unit</labl>
+  <txt><![CDATA[GPSLATLONG represents the latitude and longitude coordinates for the displaced geographic center of the primary sampling unit (IDHSPSU), as provided by the DHS Program.  The coordinates (usually referred to as GPS clusters) are provided by the DHS program and are randomly displaced from their true locations. Displacement characters include:
+Urban clusters are displaced anywhere from 0 to 2 kilometers in any direction.99% of rural clusters are displaced anywhere from 0 to 5 kilometers in any direction.1% of rural clusters are displaced up to 10 kilometers in any direction.Clusters are not displaced across survey regions or national boundaries.Downloading this variable requires that you have received additional authorization from the DHS Program to access the GPS data associated with specific DHS samples. You will not be able to download an extract with the GPS variables if you have included a sample for which you do not have permission specifically for GPS data.  To request permission to download GPS data from IPUMS DHS, follow the instructions here to apply directly with the DHS Program. 
+
+When selecting this variable in your data cart, you will find the variables GPSLAT (latitude) and GPSLONG (longitude) in your data file.  You must use both variables to identify the correct location of the displaced geographic center of a primary sampling unit. 
+
+GPSLAT and GPSLONG are merged to the data using the variable DHSID. 
+
+For more information, see the DHS GPS Data Collection page.
+
+The projection of these coordinates is datum WGS84.]]></txt>
+  <codInstr><![CDATA[GPSLAT and GPSLONG are 10-digit numeric variables with up to 6 decimal places.  If the value of GPSLAT or GPSLONG is zero, this represents missing data.]]></codInstr>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
 </dataDscr>
