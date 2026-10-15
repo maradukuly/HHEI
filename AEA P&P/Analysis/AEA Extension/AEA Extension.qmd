@@ -88,8 +88,7 @@ $\gamma_{d,k}$ are the parameters of interest: the effect of school-age exposure
 
 Potientially use deaths per 100 if there are too many near zero coef... Also, break coef by affects based on age at time of conflict, multiple betas like: $$L_{igcb} = \beta^{cross}_{early} C^{cross}_{gb,\,6\text{–}10} + \beta^{cross}_{late} C^{cross}_{gb,\,11\text{–}14} + \beta^{own}_{early} C^{own}_{gb,\,6\text{–}10} + \beta^{own}_{late} C^{own}_{gb,\,11\text{–}14} + \ldots$$
 
-```{python}
-break 
+```{python} 
 # ---- settings -------------------------------------------------------------
 data_dir = "/Users/School/GitHub/HHEI/Data"
 start_date, end_date = "1989-12-01", "2003-08-31"   # outer limits; frames run first event -> last event
