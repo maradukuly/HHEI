@@ -1,1 +1,13 @@
-Data/ 
+# Local source data and generated artifacts
+/data/
+/outputs/
+/.aea/analysis/aea_analysis.html
+/.aea/analysis/aea_analysis_files/
+
+# Operating-system and editor files
+.DS_Store
+.Rhistory
+.ipynb_checkpoints/
+__pycache__/
+.quarto/
+*.quarto_ipynb
