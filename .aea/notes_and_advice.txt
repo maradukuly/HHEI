@@ -1,0 +1,4 @@
+Meeting W Malmberg
+Main takeaway: rethink the problem structure as choice problem and consider the sequence jacobian where everything is a vector that can has a closed form solution with F.O.C., then we paramerize this and think about at age at time 2 where its like
+From 10 years old at 1998 what is their human capital and how does that change over time.
+Another thing to consider is this idea of “forgetfullness”

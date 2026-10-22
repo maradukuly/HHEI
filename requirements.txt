@@ -1,0 +1,14 @@
+geopandas
+ipykernel
+ipython
+ipumspy
+jax
+jupyter
+matplotlib
+mpmath
+numba
+numpy
+pandas
+quantecon
+requests
+scipy

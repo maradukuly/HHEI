@@ -1,4 +1,19 @@
-The purpose of the file is to provide an overview of the data used for this research, including information on the sources, types, and structure of the data.
+---
+title: "Data Overview"
+date-started: 2026-10-06
+---
+
+# Introduction
+
+**Purpose:** Summarize the individual-level, conflict, country, and post-conflict data sources considered for this research.
+
+**Date started:** 2026-10-06 (earliest recorded Git version).
+
+**Status:** Research notes; data sources and coverage may change.
+
+**Code style:** Use clear headings, descriptive names, and source links with citations.
+
+This document provides an overview of the data sources, types, and structures considered for the project.
 
 Types of Data - Micro/ individual level data - IPUMS DHS
 

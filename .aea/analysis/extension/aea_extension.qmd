@@ -1,6 +1,7 @@
 ---
-title: "AEA Extension"
-format: 
+title: "War Exposure and Literacy"
+date-started: 2026-10-12
+format:
   html:
     theme: cosmo
     code-fold: true
@@ -9,10 +10,19 @@ format:
     toc-depth: 2
     toc-location: left
 engine: jupyter
-python: "/opt/homebrew/bin/python3"
 ---
 
-Methodology Outcome variable: probability of literacy Treatment: $$ \beta_1 =  \text{individuals county conflict exposure}_t $$ $$ \beta_2 = \text{neighboring county conflict exposure}_t $$
+## Introduction
+
+**Purpose:** Document the empirical strategy for estimating how school-age conflict exposure relates to literacy in Liberia and Sierra Leone, including possible cross-border spillovers.
+
+**Date started:** 2026-10-12 (earliest recorded Git version).
+
+**Status:** Work in progress; several exposure-band parameters remain to be specified.
+
+**Code style:** Use descriptive `snake_case` names, focused code cells, and paths relative to the repository.
+
+Methodology Outcome variable: probability of literacy Treatment: $$ \beta_1 =  \text{individuals county conflict exposure}_t $$ $$ \beta_2 =  \text{neighboring county conflict exposure}_t $$
 
 ```         
 Spatial based conflict exposure. For example, based on where an individual lives, we will proxy a "ring" of events that occur near them. For geolocation, use km. Otherwise we will use county based data and create rings based off that.

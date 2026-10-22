@@ -1,0 +1,21 @@
+[project]
+name = "hhei-research"
+version = "0.1.0"
+description = "Research code for conflict, human capital, and skill formation."
+requires-python = ">=3.11"
+dependencies = [
+    "geopandas",
+    "ipykernel",
+    "ipython",
+    "ipumspy",
+    "jax",
+    "jupyter",
+    "matplotlib",
+    "mpmath",
+    "numba",
+    "numpy",
+    "pandas",
+    "quantecon",
+    "requests",
+    "scipy",
+]

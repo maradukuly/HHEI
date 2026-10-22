@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AEA Extension</title>
+<title>War Exposure and Literacy</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -64,17 +64,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="AEA Extension_files/libs/clipboard/clipboard.min.js"></script>
-<script src="AEA Extension_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="AEA Extension_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="AEA Extension_files/libs/quarto-html/popper.min.js"></script>
-<script src="AEA Extension_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="AEA Extension_files/libs/quarto-html/anchor.min.js"></script>
-<link href="AEA Extension_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="AEA Extension_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="AEA Extension_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="AEA Extension_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="AEA Extension_files/libs/bootstrap/bootstrap-c2e55264ed47ce3b2e0326a2269f9400.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="aea_extension_files/libs/clipboard/clipboard.min.js"></script>
+<script src="aea_extension_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="aea_extension_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="aea_extension_files/libs/quarto-html/popper.min.js"></script>
+<script src="aea_extension_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="aea_extension_files/libs/quarto-html/anchor.min.js"></script>
+<link href="aea_extension_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="aea_extension_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="aea_extension_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="aea_extension_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="aea_extension_files/libs/bootstrap/bootstrap-c2e55264ed47ce3b2e0326a2269f9400.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -112,7 +112,13 @@ window.Quarto = {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  </ul>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
@@ -120,7 +126,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">AEA Extension</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">War Exposure and Literacy</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -137,7 +143,13 @@ window.Quarto = {
 </header>
 
 
-<p>Methodology Outcome variable: probability of literacy Treatment: <span class="math display">\[ \beta_1 =  \text{individuals county conflict exposure}_t \]</span> <span class="math display">\[ \beta_2 = \text{neighboring county conflict exposure}_t \]</span></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p><strong>Purpose:</strong> Document the empirical strategy for estimating how school-age conflict exposure relates to literacy in Liberia and Sierra Leone, including possible cross-border spillovers.</p>
+<p><strong>Date started:</strong> 2026-10-12 (earliest recorded Git version).</p>
+<p><strong>Status:</strong> Work in progress; several exposure-band parameters remain to be specified.</p>
+<p><strong>Code style:</strong> Use descriptive <code>snake_case</code> names, focused code cells, and paths relative to the repository.</p>
+<p>Methodology Outcome variable: probability of literacy Treatment: <span class="math display">\[ \beta_1 =  \text{individuals county conflict exposure}_t \]</span> <span class="math display">\[ \beta_2 =  \text{neighboring county conflict exposure}_t \]</span></p>
 <pre><code>Spatial based conflict exposure. For example, based on where an individual lives, we will proxy a "ring" of events that occur near them. For geolocation, use km. Otherwise we will use county based data and create rings based off that.
 Where each $\beta$ represents an event (battles):
    Seperate into overall high/ low intenstiy by deaths
@@ -216,6 +228,7 @@ L_i = \sum_{d}\sum_{k} \beta_{d,k}\, CE_{i,d,k}
 <p>Potientially use deaths per 100 if there are too many near zero coef… Also, break coef by affects based on age at time of conflict, multiple betas like: <span class="math display">\[L_{igcb} = \beta^{cross}_{early} C^{cross}_{gb,\,6\text{–}10} + \beta^{cross}_{late} C^{cross}_{gb,\,11\text{–}14} + \beta^{own}_{early} C^{own}_{gb,\,6\text{–}10} + \beta^{own}_{late} C^{own}_{gb,\,11\text{–}14} + \ldots\]</span></p>
 <!-- -->
 
+</section>
 </section>
 
 </main>
@@ -672,94 +685,104 @@ L_i = \sum_{d}\sum_{k} \beta_{d,k}\, CE_{i,d,k}
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "AEA Extension"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: cosmo</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 2</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="an">engine:</span><span class="co"> jupyter</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="an">python:</span><span class="co"> "/opt/homebrew/bin/python3"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "War Exposure and Literacy"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">date-started:</span><span class="co"> 2026-10-12</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: cosmo</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 2</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="an">engine:</span><span class="co"> jupyter</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>Methodology Outcome variable: probability of literacy Treatment: $$ \beta_1 =  \text{individuals county conflict exposure}_t $$ $$ \beta_2 = \text{neighboring county conflict exposure}_t $$</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">```         </span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">Spatial based conflict exposure. For example, based on where an individual lives, we will proxy a "ring" of events that occur near them. For geolocation, use km. Otherwise we will use county based data and create rings based off that.</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="in">Where each $\beta$ represents an event (battles):</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="in">   Seperate into overall high/ low intenstiy by deaths</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">   Proportion of overall conflicts near you given total number of events. </span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>**Purpose:** Document the empirical strategy for estimating how school-age conflict exposure relates to literacy in Liberia and Sierra Leone, including possible cross-border spillovers.</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>**Date started:** 2026-10-12 (earliest recorded Git version).</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>**Status:** Work in progress; several exposure-band parameters remain to be specified.</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>**Code style:** Use descriptive <span class="in">`snake_case`</span> names, focused code cells, and paths relative to the repository.</span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>Controls: Let $X_i$ represent a vector of controls for $i$ based on their birth cohort country? be: Gender, ethnicity, birth cohort/ year of birth... <span class="sc">\#</span># Empirical Strategy</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>Methodology Outcome variable: probability of literacy Treatment: $$ \beta_1 =  \text{individuals county conflict exposure}_t $$ $$ \beta_2 =  \text{neighboring county conflict exposure}_t $$</span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sample</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>We use the first Demographic and Health Survey fielded after each civil war ended: the 2007 Liberia DHS (war ended August 2003) and the 2008 Sierra Leone DHS (war ended January 2002), accessed through IPUMS DHS and linked to DHS GPS cluster coordinates. As an extension, we add the second post-war wave (2013 in both countries), which brings in younger cohorts with partial or no school-age exposure.</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>To limit bias from war-time displacement, the sample is restricted to permanent residents: respondents who report having always lived in their current place of residence (DHS v104 = "always"). Visitors are excluded. The sample includes women and men aged 15–49 with non-missing literacy.</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### Indices</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="in">```         </span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="in">Spatial based conflict exposure. For example, based on where an individual lives, we will proxy a "ring" of events that occur near them. For geolocation, use km. Otherwise we will use county based data and create rings based off that.</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="in">Where each $\beta$ represents an event (battles):</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="in">   Seperate into overall high/ low intenstiy by deaths</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="in">   Proportion of overall conflicts near you given total number of events. </span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>$i$ individual; $n$ neighborhood (DHS cluster); $r$ region (county in Liberia, district in Sierra Leone); $c$ country; $b$ birth year; $t$ calendar year; $w$ survey wave; $d \in <span class="sc">\{</span>d_1, d_2, d_3<span class="sc">\}</span>$ distance band; $k \in <span class="sc">\{</span>1,2,3<span class="sc">\}</span>$ UCDP violence type (state-based, non-state, one-sided); $e$ UCDP GED event.</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>Controls: Let $X_i$ represent a vector of controls for $i$ based on their birth cohort country? be: Gender, ethnicity, birth cohort/ year of birth... <span class="sc">\#</span># Empirical Strategy</span>
 <span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="fu">### Outcome</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sample</span></span>
 <span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>$L_i \in <span class="sc">\{</span>0,1<span class="sc">\}</span>$ equals 1 if respondent $i$ reads a whole sentence on the DHS reading card, or completed secondary school or higher, and 0 if they cannot read or read only parts of a sentence. Respondents with no card in a required language or with a visual impairment are set to missing. As a robustness check, partial readers are coded as literate.</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>We use the first Demographic and Health Survey fielded after each civil war ended: the 2007 Liberia DHS (war ended August 2003) and the 2008 Sierra Leone DHS (war ended January 2002), accessed through IPUMS DHS and linked to DHS GPS cluster coordinates. As an extension, we add the second post-war wave (2013 in both countries), which brings in younger cohorts with partial or no school-age exposure.</span>
 <span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Conflict exposure</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>To limit bias from war-time displacement, the sample is restricted to permanent residents: respondents who report having always lived in their current place of residence (DHS v104 = "always"). Visitors are excluded. The sample includes women and men aged 15–49 with non-missing literacy.</span>
 <span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>Distance bands around $i$'s neighborhood $n_i$ are non-overlapping:</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Indices</span></span>
 <span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Band  <span class="pp">|</span> Distance from $n_i$ <span class="pp">|</span></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|---------------------|</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $d_1$ <span class="pp">|</span> 0 – TBD km          <span class="pp">|</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $d_2$ <span class="pp">|</span> TBD – TBD km        <span class="pp">|</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $d_3$ <span class="pp">|</span> TBD – TBD km        <span class="pp">|</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>$i$ individual; $n$ neighborhood (DHS cluster); $r$ region (county in Liberia, district in Sierra Leone); $c$ country; $b$ birth year; $t$ calendar year; $w$ survey wave; $d \in <span class="sc">\{</span>d_1, d_2, d_3<span class="sc">\}</span>$ distance band; $k \in <span class="sc">\{</span>1,2,3<span class="sc">\}</span>$ UCDP violence type (state-based, non-state, one-sided); $e$ UCDP GED event.</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Outcome</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>$L_i \in <span class="sc">\{</span>0,1<span class="sc">\}</span>$ equals 1 if respondent $i$ reads a whole sentence on the DHS reading card, or completed secondary school or higher, and 0 if they cannot read or read only parts of a sentence. Respondents with no card in a required language or with a visual impairment are set to missing. As a robustness check, partial readers are coded as literate.</span>
 <span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>Events beyond the outer edge of $d_3$ are excluded.</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="fu">### Conflict exposure</span></span>
 <span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>$i$'s school-age window is $W_i = <span class="co">[</span><span class="ot">b_i + a_0,\; b_i + a_1</span><span class="co">]</span>$, where $a_0$ and $a_1$ are school-entry and school-exit ages (TBD; baseline 6–14).</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>Distance bands around $i$'s neighborhood $n_i$ are non-overlapping:</span>
 <span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>Each event $e$ has a year $t(e)$, violence type $k(e)$, country $c(e)$, distance from $i$'s neighborhood $\text{dist}(n_i, e)$, and distance to the Liberia–Sierra Leone border $\text{db}(e)$. The border zone is defined as $\text{db}(e) \le B$, with $B$ TBD. The set of relevant events for $i$ is</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>$$\mathcal{R}_{i,d,k} = <span class="sc">\{</span>\, e : k(e) = k,\; t(e) \in W_i,\; \text{dist}(n_i, e) \in d \,<span class="sc">\}</span>$$</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>partitioned into three mutually exclusive subsets:</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Band  <span class="pp">|</span> Distance from $n_i$ <span class="pp">|</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|---------------------|</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $d_1$ <span class="pp">|</span> 0 – TBD km          <span class="pp">|</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $d_2$ <span class="pp">|</span> TBD – TBD km        <span class="pp">|</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $d_3$ <span class="pp">|</span> TBD – TBD km        <span class="pp">|</span></span>
 <span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Internal conflict exposure:** $\mathcal{R}^{CE}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : c(e) = c_i,\; \text{db}(e) &gt; B <span class="sc">\}</span>$</span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spillover conflict exposure:** $\mathcal{R}^{SCE}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : c(e) \neq c_i,\; \text{db}(e) &gt; B <span class="sc">\}</span>$</span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Border fighting exposure:** $\mathcal{R}^{BF}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : \text{db}(e) \le B <span class="sc">\}</span>$</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>Events beyond the outer edge of $d_3$ are excluded.</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>$i$'s school-age window is $W_i = <span class="co">[</span><span class="ot">b_i + a_0,\; b_i + a_1</span><span class="co">]</span>$, where $a_0$ and $a_1$ are school-entry and school-exit ages (TBD; baseline 6–14).</span>
 <span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>The treatment variables are log event counts:</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>Each event $e$ has a year $t(e)$, violence type $k(e)$, country $c(e)$, distance from $i$'s neighborhood $\text{dist}(n_i, e)$, and distance to the Liberia–Sierra Leone border $\text{db}(e)$. The border zone is defined as $\text{db}(e) \le B$, with $B$ TBD. The set of relevant events for $i$ is</span>
 <span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>$$CE_{i,d,k} = \ln<span class="sc">\!</span>\big(1 + |\mathcal{R}^{CE}_{i,d,k}|\big), \quad</span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>  SCE_{i,d,k} = \ln<span class="sc">\!</span>\big(1 + |\mathcal{R}^{SCE}_{i,d,k}|\big), \quad</span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  BF_{i,d,k} = \ln<span class="sc">\!</span>\big(1 + |\mathcal{R}^{BF}_{i,d,k}|\big)$$</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>$$\mathcal{R}_{i,d,k} = <span class="sc">\{</span>\, e : k(e) = k,\; t(e) \in W_i,\; \text{dist}(n_i, e) \in d \,<span class="sc">\}</span>$$</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>partitioned into three mutually exclusive subsets:</span>
 <span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="fu">### Specification</span></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>L_i = \sum_{d}\sum_{k} \beta_{d,k}\, CE_{i,d,k}</span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>\sum_{d}\sum_{k} \gamma_{d,k}\, SCE_{i,d,k}</span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>\sum_{d}\sum_{k} \theta_{d,k}\, BF_{i,d,k}</span>
-<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>X_i'\pi + \mu_{n} + \lambda_{c \times b} + \delta_{w} + \varepsilon_i</span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$X_i$: pre-determined individual controls (sex, ethnicity, religion)</span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mu_n$: neighborhood fixed effects</span>
-<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\lambda_{c \times b}$: country-by-birth-year fixed effects</span>
-<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\delta_w$: survey-wave fixed effects (each wave is country-specific)</span>
-<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>$\gamma_{d,k}$ are the parameters of interest: the effect of school-age exposure to conflict of type $k$ across the border, in band $d$, conditional on internal exposure and border fighting. The specification is estimated as a weighted linear probability model using DHS sampling weights.</span>
-<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>**Heterogeneity.** Let $Z_i = 1$ if $\text{db}(n_i) \le B$, i.e. $i$ lives in the border zone. We interact $Z_i$ with $SCE_{i,d,k}$ and $BF_{i,d,k}$ to test whether spillover effects differ for border residents. $Z_i$ itself is absorbed by $\mu_n$.</span>
-<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>Potientially use deaths per 100 if there are too many near zero coef... Also, break coef by affects based on age at time of conflict, multiple betas like: $$L_{igcb} = \beta^{cross}_{early} C^{cross}_{gb,\,6\text{–}10} + \beta^{cross}_{late} C^{cross}_{gb,\,11\text{–}14} + \beta^{own}_{early} C^{own}_{gb,\,6\text{–}10} + \beta^{own}_{late} C^{own}_{gb,\,11\text{–}14} + \ldots$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Internal conflict exposure:** $\mathcal{R}^{CE}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : c(e) = c_i,\; \text{db}(e) &gt; B <span class="sc">\}</span>$</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spillover conflict exposure:** $\mathcal{R}^{SCE}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : c(e) \neq c_i,\; \text{db}(e) &gt; B <span class="sc">\}</span>$</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Border fighting exposure:** $\mathcal{R}^{BF}_{i,d,k} = \{ e \in \mathcal{R}_{i,d,k} : \text{db}(e) \le B <span class="sc">\}</span>$</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>The treatment variables are log event counts:</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>$$CE_{i,d,k} = \ln<span class="sc">\!</span>\big(1 + |\mathcal{R}^{CE}_{i,d,k}|\big), \quad</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  SCE_{i,d,k} = \ln<span class="sc">\!</span>\big(1 + |\mathcal{R}^{SCE}_{i,d,k}|\big), \quad</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>  BF_{i,d,k} = \ln<span class="sc">\!</span>\big(1 + |\mathcal{R}^{BF}_{i,d,k}|\big)$$</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="fu">### Specification</span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>L_i = \sum_{d}\sum_{k} \beta_{d,k}\, CE_{i,d,k}</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>\sum_{d}\sum_{k} \gamma_{d,k}\, SCE_{i,d,k}</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>\sum_{d}\sum_{k} \theta_{d,k}\, BF_{i,d,k}</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>X_i'\pi + \mu_{n} + \lambda_{c \times b} + \delta_{w} + \varepsilon_i</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$X_i$: pre-determined individual controls (sex, ethnicity, religion)</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mu_n$: neighborhood fixed effects</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\lambda_{c \times b}$: country-by-birth-year fixed effects</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\delta_w$: survey-wave fixed effects (each wave is country-specific)</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>$\gamma_{d,k}$ are the parameters of interest: the effect of school-age exposure to conflict of type $k$ across the border, in band $d$, conditional on internal exposure and border fighting. The specification is estimated as a weighted linear probability model using DHS sampling weights.</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>**Heterogeneity.** Let $Z_i = 1$ if $\text{db}(n_i) \le B$, i.e. $i$ lives in the border zone. We interact $Z_i$ with $SCE_{i,d,k}$ and $BF_{i,d,k}$ to test whether spillover effects differ for border residents. $Z_i$ itself is absorbed by $\mu_n$.</span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>Potientially use deaths per 100 if there are too many near zero coef... Also, break coef by affects based on age at time of conflict, multiple betas like: $$L_{igcb} = \beta^{cross}_{early} C^{cross}_{gb,\,6\text{–}10} + \beta^{cross}_{late} C^{cross}_{gb,\,11\text{–}14} + \beta^{own}_{early} C^{own}_{gb,\,6\text{–}10} + \beta^{own}_{late} C^{own}_{gb,\,11\text{–}14} + \ldots$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
